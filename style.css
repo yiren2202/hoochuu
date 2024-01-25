@@ -1,0 +1,24 @@
+* {   margin: 0;   padding: 0;   box-sizing: border-box; } 
+body{
+    background-color: #fff;
+}
+
+.content{
+    height: 112.5vw;
+    background-image: url("img/bg/P1_nobag.png"), url("img/bg/P2_nobag.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: contain;
+}
+
+.cutebag{
+    position: fixed;
+    top: 35vw;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    width: 33vw;
+}
+.cutebag__img{
+    /* position: relative; */
+    width: 100%;
+}
