@@ -5,7 +5,7 @@ body{
 
 .content{
     height: 112.5vw;
-    background-image: url("img/bg/P1_nobag.png"), url("img/bg/P2_nobag.png");
+    background-image: url("img/bg/V2/P1_V2.png"), url("img/bg/V2/P2_V2.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: contain;
