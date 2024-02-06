@@ -4,7 +4,7 @@ let lastKnownScrollPosition = 0;
 let ticking = false;
 let innerW = window.innerWidth;
 let cutebag__img_index = 1;
-let cutebag__img_total = 117;
+let cutebag__img_total = 152;
 let scrollPos__temp;
 // Map function to convert the range
 function mapRange(value, inMin, inMax, outMin, outMax) {
@@ -17,12 +17,11 @@ function preload_image(im_url) {
 }
 for(let i=1; i<=cutebag__img_total; i++)
 {
-  console.log(i);
-  preload_image("img/0125Test/running"+i+".png");
+  preload_image("img/0126_compressed/running"+i+".png");
 }
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
-  console.log(scrollPos);
+  // console.log(scrollPos);
   document.getElementById("cutebag").style.top = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.35, innerW-innerW*0.8)+ "px";
   document.getElementById("cutebag").style.left = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.5, innerW-innerW*0.01)+ "px";
   if(scrollPos-scrollPos__temp > 0)
@@ -47,7 +46,7 @@ function doSomething(scrollPos) {
   }
   scrollPos__temp = scrollPos;
 //   cutebag__img_index = scrollPos%117 + 1;
-  document.getElementById("cutebag__img").src = "img/0125Test/running"+cutebag__img_index+".png";
+  document.getElementById("cutebag__img").src = "img/0126_compressed/running"+cutebag__img_index+".png";
 }
 
 document.addEventListener("scroll", function (e) {
