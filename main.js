@@ -6,6 +6,9 @@ let innerW = window.innerWidth;
 let cutebag__img_index = 1;
 let cutebag__img_total = 152;
 let scrollPos__temp;
+let scrollPos__check1 = 700;
+let scrollPos__check2 = 1400;
+let scrollPos__bottom = 5700;
 // Map function to convert the range
 function mapRange(value, inMin, inMax, outMin, outMax) {
     return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
@@ -21,7 +24,23 @@ for(let i=1; i<=cutebag__img_total; i++)
 }
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
-  // console.log(scrollPos);
+  console.log(scrollPos);
+  let bagleft = 0;
+  if(scrollPos <= scrollPos__check1)
+  {
+    bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
+    document.getElementById("cutebag").style.left = bagleft+"px";
+  }
+  else if(scrollPos <= scrollPos__check2)
+  {
+    bagleft = innerW*0.9 - innerW*0.4*((scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1));
+    console.log(bagleft);
+    document.getElementById("cutebag").style.left = bagleft+"px";
+  }
+  else
+  {
+    document.getElementById("cutebag").style.left = "50vw";
+  }
   // document.getElementById("cutebag").style.top = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.35, innerW-innerW*0.8)+ "px";
   // document.getElementById("cutebag").style.left = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.5, innerW-innerW*0.01)+ "px";
   if(scrollPos-scrollPos__temp > 0)

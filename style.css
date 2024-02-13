@@ -40,6 +40,9 @@ marquee {
     writing-mode: vertical-rl
 }
 
+.placeholder4xx {
+    height: 460px;
+}
 .placeholder25xx {
     height: 2535px;
 }
