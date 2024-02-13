@@ -3,12 +3,20 @@ body{
     background-color: #fff;
 }
 
+marquee {
+    height: 45px;
+    background-color: #ed7153;
+    color: #fff;
+    font-size:  20px;
+    line-height: 2.2;
+}
+
 .content{
-    height: 112.5vw;
+    /* height: 112.5vw;
     background-image: url("img/bg/V3.png");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: contain; */
 }
 
 .cutebag{
@@ -22,3 +30,17 @@ body{
     /* position: relative; */
     width: 100%;
 }
+
+.bg__cloud {
+    width: 100vw;
+}
+
+.landing__text {
+    width: 100vw;
+    writing-mode: vertical-rl
+}
+
+.placeholder25xx {
+    height: 2535px;
+}
+

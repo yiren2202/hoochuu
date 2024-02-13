@@ -22,8 +22,8 @@ for(let i=1; i<=cutebag__img_total; i++)
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
   // console.log(scrollPos);
-  document.getElementById("cutebag").style.top = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.35, innerW-innerW*0.8)+ "px";
-  document.getElementById("cutebag").style.left = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.5, innerW-innerW*0.01)+ "px";
+  // document.getElementById("cutebag").style.top = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.35, innerW-innerW*0.8)+ "px";
+  // document.getElementById("cutebag").style.left = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.5, innerW-innerW*0.01)+ "px";
   if(scrollPos-scrollPos__temp > 0)
   {
     if(cutebag__img_index < cutebag__img_total)
