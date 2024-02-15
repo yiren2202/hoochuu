@@ -12,8 +12,11 @@ marquee {
 }
 
 #lottie1 {
-    width: 35vw;
-    /* position: fixed; */
+    width: 40vw;
+    position: fixed;
+    top: 10vw;
+    left: 50vw;
+    transform: translate(-50%);
 }
 #lottie2 {
     width: 35vw;
