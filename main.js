@@ -30,16 +30,19 @@ function doSomething(scrollPos) {
   {
     bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
     document.getElementById("cutebag").style.left = bagleft+"px";
+    lottie1.style.left = bagleft+"px";
   }
   else if(scrollPos <= scrollPos__check2)
   {
     bagleft = innerW*0.9 - innerW*0.4*((scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1));
     // console.log(bagleft);
     document.getElementById("cutebag").style.left = bagleft+"px";
+    lottie1.style.left = bagleft+"px";
   }
   else
   {
     document.getElementById("cutebag").style.left = "50vw";
+    lottie1.style.left = "50vw";
   }
   // document.getElementById("cutebag").style.top = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.35, innerW-innerW*0.8)+ "px";
   // document.getElementById("cutebag").style.left = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.5, innerW-innerW*0.01)+ "px";
@@ -93,7 +96,7 @@ animation1 = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: false,
-  path: 'https://assets5.lottiefiles.com/packages/lf20_FISfBK.json' // the path to the animation json
+  path: 'img/plastic_1125.json' // the path to the animation json
 });
 
 // player1.addEventListener("ready", () => {

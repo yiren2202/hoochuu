@@ -14,14 +14,7 @@ marquee {
 #lottie1 {
     width: 40vw;
     position: fixed;
-    top: 10vw;
-    left: 50vw;
-    transform: translate(-50%);
-}
-#lottie2 {
-    width: 35vw;
-    position: fixed;
-    top: 0;
+    top: 1vw;
     left: 50vw;
     transform: translate(-50%);
 }
@@ -36,10 +29,10 @@ marquee {
 
 .cutebag{
     position: fixed;
-    top: 35vw;
+    top: 50vw;
     left: 50vw;
     transform: translate(-50%,-50%);
-    width: 33vw;
+    width: 10vw;
 }
 .cutebag__img{
     /* position: relative; */
