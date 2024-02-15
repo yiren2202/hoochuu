@@ -11,6 +11,18 @@ marquee {
     line-height: 2.2;
 }
 
+#lottie1 {
+    width: 35vw;
+    /* position: fixed; */
+}
+#lottie2 {
+    width: 35vw;
+    position: fixed;
+    top: 0;
+    left: 50vw;
+    transform: translate(-50%);
+}
+
 .content{
     /* height: 112.5vw;
     background-image: url("img/bg/V3.png");

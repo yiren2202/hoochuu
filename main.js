@@ -80,3 +80,33 @@ document.addEventListener("scroll", function (e) {
     ticking = true;
   }
 });
+
+let player1 = document.getElementById("lottie1");
+let player2 = document.getElementById("lottie2");
+
+player1.addEventListener("ready", () => {
+  LottieInteractivity.create({
+			  mode:"scroll",
+			  player: "#lottie1",
+			  actions: [
+        {
+            visibility:[0, 1.0],
+            type: "seek",
+            frames: [0, 300],
+        },
+        ]
+			});
+});
+player2.addEventListener("ready", () => {
+  LottieInteractivity.create({
+			  mode:"scroll",
+			  player: "#lottie2",
+			  actions: [
+        {
+            visibility:[0, 1.0],
+            type: "seek",
+            frames: [0, 300],
+        },
+        ]
+			});
+});
