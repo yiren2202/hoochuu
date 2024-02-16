@@ -1,14 +1,18 @@
-// 參考來源：http://www.html5rocks.com/en/tutorials/speed/animations/
-
+window.onload = () => {
+  //do work
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let innerW = window.innerWidth;
+let cutebag__img_path = "img/lottiefile/plastic_240216_2.json";
 let cutebag__img_index = 1;
-let cutebag__img_total = 152;
+let cutebag__img_start = 1;
+let cutebag__img_end = 151;
 let scrollPos__temp;
 let scrollPos__check1 = 700;
 let scrollPos__check2 = 1400;
-let scrollPos__bottom = 5700;
+let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
+// console.log(document.body.scrollHeight);
+// console.log(window.innerHeight);
 // Map function to convert the range
 function mapRange(value, inMin, inMax, outMin, outMax) {
     return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
@@ -18,13 +22,13 @@ function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
-for(let i=1; i<=cutebag__img_total; i++)
+for(let i=1; i<=cutebag__img_end; i++)
 {
   preload_image("img/0126_compressed/running"+i+".png");
 }
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
-  // console.log(scrollPos);
+  console.log(scrollPos);
   let bagleft = 0;
   if(scrollPos <= scrollPos__check1)
   {
@@ -46,30 +50,30 @@ function doSomething(scrollPos) {
   }
   // document.getElementById("cutebag").style.top = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.35, innerW-innerW*0.8)+ "px";
   // document.getElementById("cutebag").style.left = mapRange(scrollPos, 0, innerW*0.7, 0+innerW*0.5, innerW-innerW*0.01)+ "px";
-  if(scrollPos-scrollPos__temp > 0)
-  {
-    if(cutebag__img_index < cutebag__img_total)
-    {
-        cutebag__img_index++;
-    }
-    else{
-        cutebag__img_index = 1;
-    }
-  }
-  else
-  {
-    if(cutebag__img_index >1)
-    {
-        cutebag__img_index--;
-    }
-    else{
-        cutebag__img_index = cutebag__img_total;
-    }
-  }
-  scrollPos__temp = scrollPos;
-//   cutebag__img_index = scrollPos%117 + 1;
+  // if(scrollPos-scrollPos__temp > 0)
+  // {
+  //   if(cutebag__img_index < cutebag__img_end)
+  //   {
+  //       cutebag__img_index++;
+  //   }
+  //   else{
+  //       cutebag__img_index = 1;
+  //   }
+  // }
+  // else
+  // {
+  //   if(cutebag__img_index >1)
+  //   {
+  //       cutebag__img_index--;
+  //   }
+  //   else{
+  //       cutebag__img_index = cutebag__img_end;
+  //   }
+  // }
+  // scrollPos__temp = scrollPos;
+  cutebag__img_index = Math.round(mapRange(scrollPos, 0, scrollPos__bottom, 1, cutebag__img_end));
   console.log(cutebag__img_index);
-  animation1.goToAndStop(cutebag__img_index+10, true);
+  animation1.goToAndStop(cutebag__img_index, true);
   document.getElementById("cutebag__img").src = "img/0126_compressed/running"+cutebag__img_index+".png";
 }
 
@@ -96,7 +100,7 @@ animation1 = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: false,
-  path: 'img/plastic_1125.json' // the path to the animation json
+  path: cutebag__img_path // the path to the animation json
 });
 
 // player1.addEventListener("ready", () => {
@@ -125,3 +129,5 @@ animation1 = lottie.loadAnimation({
 //         ]
 // 			});
 // });
+
+}
