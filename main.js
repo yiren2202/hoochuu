@@ -6,7 +6,7 @@ let innerW = window.innerWidth;
 let cutebag__img_path = "img/lottiefile/plastic_240216_2.json";
 let cutebag__img_index = 1;
 let cutebag__img_start = 1;
-let cutebag__img_end = 151;
+let cutebag__img_end = 75;
 let scrollPos__temp;
 let scrollPos__check1 = 700;
 let scrollPos__check2 = 1400;
