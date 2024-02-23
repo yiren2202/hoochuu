@@ -32,10 +32,11 @@ a.nostyle:visited {
 .marquee-wall{
     display: flex;
     height: 45px;
-    background-color: #ed7153;
+    background-color: #ff6748;
     color: #fff;
     font-size:  20px;
     line-height: 2.2;
+    overflow: hidden;
 }
 .marquee-wrapper{
     display: flex;
@@ -81,10 +82,10 @@ a.nostyle:visited {
 }
 
 .content{
-    background-image: url("img/bg/yellow.png");
-    background-repeat: no-repeat;
-    background-position: left 0 top 25vw;
-    background-size: contain;
+    /* background-image: url("img/bg/yellow.png"), url("img/bg/blue.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0 top 25vw, left 0 top 115vw;
+    background-size: contain, contain; */
 }
 
 .cutebag{
@@ -122,18 +123,83 @@ a.nostyle:visited {
     width: 100%;
 }
 .landing__text {
+    background-image: url("img/bg/yellow.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 25vw;
+    background-size: contain;
     padding: 10vw 10vw 0 0;
     width: 100vw;
+    height: 80vw;
     writing-mode: vertical-rl
 }
 .landing__text_en {
     font-size: 1.2rem;
-    color: #ed7153;
+    color: #ff6748;
 }
 .landing__text_tc {
     font-size: 1.6rem;
     letter-spacing: 0.5rem;
 }
+.steps__text {
+    width: 100vw;
+    padding: 0 0 0 15vw;
+}
+.steps__title {
+    font-size: 2rem;
+}
+.steps__text_free {
+    color: #ff6748;
+}
+.steps__item {
+    margin: 5vw 0;
+    overflow: hidden;
+}
+.steps__item_img {
+    float:left;
+    display: block;
+    width:15%;
+}
+.steps__item_text {
+    float: right;
+    width: 85%;
+    padding: 2%;
+}
+.steps__item.steps__item_right {
+    float: right;
+    width: 50%;
+}
+.steps__item.steps__item_right .steps__item_img {
+    float:left;
+    display: block;
+    width:40%;
+}
+.steps__item.steps__item_right .steps__item_text {
+    float:right;
+    display: block;
+    width:60%;
+    font-size: 2rem;
+}
+
+.reasons__text {
+    background-image: url("img/bg/blue.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    padding: 25vw 5vw 0 5vw;
+    width: 100vw;
+    height: 800vw;
+    
+}
+.reasons__title {
+    font-size: 2rem;
+}
+.reasons__item {
+    margin: 10vw;
+}
+.reasons__item img{
+    width: 100%;
+}
+
 .placeholder4xx {
     height: 460px;
 }
