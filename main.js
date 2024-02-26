@@ -28,7 +28,7 @@ function preload_image(im_url) {
 
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
-  console.log(scrollPos);
+  // console.log(scrollPos);
   let bagleft = 0;
   if(scrollPos <= scrollPos__check1)
   {
@@ -61,7 +61,7 @@ function doSomething(scrollPos) {
   }
   
   cutebag__img_index = Math.round(mapRange(scrollPos, 0, scrollPos__bottom, 1, cutebag__img_end));
-  console.log(cutebag__img_index);
+  // console.log(cutebag__img_index);
   animation1.goToAndStop(cutebag__img_index, true);
 }
 
@@ -88,5 +88,20 @@ animation1 = lottie.loadAnimation({
   autoplay: false,
   path: cutebag__img_path // the path to the animation json
 });
+
+let splide = new Splide( '.splide', {
+  type   : 'loop',
+  focus  : 'center',
+  perPage: 3,
+  gap    : '2rem',
+  breakpoints: {
+    640: {
+      perPage: 1,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+  },
+});
+splide.mount();
 
 }

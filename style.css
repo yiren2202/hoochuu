@@ -34,6 +34,7 @@ img {
 }
 .marquee-wall{
     display: flex;
+    width: 100vw;
     height: 45px;
     background-color: #ff6748;
     color: #fff;
@@ -72,7 +73,7 @@ img {
     bottom: 3vw;
     left: 3vw;
     width: 10vw;
-    z-index: 9;
+    z-index: 8;
 }
 .applybutton img {
     width: 100%;
@@ -83,7 +84,7 @@ img {
     top: 1vw;
     left: 50vw;
     transform: translate(-50%);
-    z-index: 10;
+    z-index: 6;
 }
 
 .content{
@@ -233,8 +234,28 @@ img {
     position: relative;
     left: -10vw;
 }
-
-
+/* past */
+.past__text {
+    margin: 10vw 5vw;
+}
+.past__left {
+    width: 10%;
+}
+.past__right {
+    width: 90%;
+}
+/* splide */
+.splide {
+    z-index: 7;
+}
+.splide__slide {
+    background-color: #fff;
+    border: #ff6748 1px solid;
+    border-radius: 45px;
+}
+.splide__slide p {
+    margin: 2vw;
+}
 /* share */
 .share__text {
     padding: 15vw 5vw 0 10vw;
@@ -277,7 +298,7 @@ img {
     padding: 40vw 5vw 10vw 15vw;
     width: 100vw;
     height: 89vw;
-    z-index: 8;
+    z-index: 4;
 }
 .footer__left {
     float: left;
