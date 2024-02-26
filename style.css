@@ -20,6 +20,9 @@ a.nostyle:visited {
     color: inherit;
     cursor: auto;
 }
+img {
+    width: 100%;
+}
 
 @keyframes scroll{
     from{transform: translateX(100%)}
@@ -68,7 +71,8 @@ a.nostyle:visited {
     position: fixed;
     bottom: 3vw;
     left: 3vw;
-    width: 15vw;
+    width: 10vw;
+    z-index: 9;
 }
 .applybutton img {
     width: 100%;
@@ -79,6 +83,7 @@ a.nostyle:visited {
     top: 1vw;
     left: 50vw;
     transform: translate(-50%);
+    z-index: 10;
 }
 
 .content{
@@ -140,6 +145,7 @@ a.nostyle:visited {
     font-size: 1.6rem;
     letter-spacing: 0.5rem;
 }
+/* steps */
 .steps__text {
     width: 100vw;
     padding: 0 0 0 15vw;
@@ -180,14 +186,16 @@ a.nostyle:visited {
     font-size: 2rem;
 }
 
+/* reasons */
 .reasons__text {
     background-image: url("img/bg/blue.png");
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
-    padding: 25vw 5vw 0 5vw;
+    position: relative;
+    padding: 25vw 5vw 10vw 5vw;
     width: 100vw;
-    height: 800vw;
+    height: 300vw;
     
 }
 .reasons__title {
@@ -199,7 +207,106 @@ a.nostyle:visited {
 .reasons__item img{
     width: 100%;
 }
+.reasons__end {
+    position: absolute;
+    bottom: 10vw;
+    right: 5vw;
+    font-size: 1.5rem;
+}
 
+/* about */
+.about__text {
+    padding: 25vw 5vw 10vw 50vw;
+    width: 100vw;
+}
+.about__hoo {
+    width: 15vw;
+}
+.about__hoo-text {
+    margin: 2vw 0 0 0;
+    padding: 0 0 0 10vw;
+}
+.about__chuu {
+    width: 15vw;
+}
+.about__chuu-text {
+    position: relative;
+    left: -10vw;
+}
+
+
+/* share */
+.share__text {
+    padding: 15vw 5vw 0 10vw;
+    height: 50vw;
+}
+.share__left {
+    float: left;
+    width: 30%;
+}
+.share__title {
+
+}
+.share__title-text {
+    font-size: 2rem;
+    text-align: center;
+}
+.share__right {
+    position: relative;
+    float: right;
+    padding: 20vw 0 0;
+    width: 30%;
+}
+.share__icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10%;
+}
+.share__icon-text {
+    padding: 5vw 0;
+    text-align: center;
+}
+/* footer */
+.footer {
+    background-image: url("img/bg/green.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    position: relative;
+    padding: 40vw 5vw 10vw 15vw;
+    width: 100vw;
+    height: 89vw;
+    z-index: 8;
+}
+.footer__left {
+    float: left;
+    width: 50%;
+    padding: 20vw 0 0;
+}
+.footer__right {
+    float: right;
+    width: 50%;
+}
+.footer__logo {
+    width: 100%;
+}
+.footer__title {
+    width: 50%;
+}
+.footer__text {
+    margin: 10vw 0 0 10vw;
+    font-size: 1.4rem;
+}
+.footer__ig, .footer__email {
+    width: 10%;
+}
+
+.footer .marquee-wall{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .placeholder4xx {
     height: 460px;
 }
