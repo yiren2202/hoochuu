@@ -30,10 +30,10 @@ function preload_image(im_url) {
 }
 
 // build scene
-// let scene__steps = new ScrollMagic.Scene({triggerElement: "#trigger__steps", duration: 300})
-//   .triggerHook(0)
-//   .setPin("#steps__text", {pushFollowers: false})
-//   .addTo(SMcontroller);
+let scene__apply = new ScrollMagic.Scene({triggerElement: "#trigger__apply", duration: 300})
+  .triggerHook(0)
+  .setPin("#applybutton", {pushFollowers: false})
+  .addTo(SMcontroller);
 
 let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 400})
   .triggerHook(0)
