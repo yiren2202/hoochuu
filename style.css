@@ -81,17 +81,10 @@ img {
 #lottie1 {
     width: 40vw;
     position: fixed;
-    top: 1vw;
+    top: -5vw;
     left: 50vw;
     transform: translate(-50%);
     z-index: 6;
-}
-
-.content{
-    /* background-image: url("img/bg/yellow.png"), url("img/bg/blue.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 0 top 25vw, left 0 top 115vw;
-    background-size: contain, contain; */
 }
 
 .cutebag{
@@ -258,6 +251,8 @@ img {
 }
 /* share */
 .share__text {
+    position: sticky;
+    top: 0;
     padding: 15vw 5vw 0 10vw;
     height: 50vw;
 }
