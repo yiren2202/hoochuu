@@ -81,7 +81,7 @@ img {
 #lottie1 {
     width: 40vw;
     position: fixed;
-    top: -5vw;
+    top: -15vw;
     left: 50vw;
     transform: translate(-50%);
     z-index: 6;
@@ -196,9 +196,11 @@ img {
     font-size: 2rem;
 }
 .reasons__item {
-    margin: 10vw;
+    position: sticky;
+    top: 5vw;
+    padding: 5vw 10vw;
 }
-.reasons__item img{
+.reasons__item-img{
     width: 100%;
 }
 .reasons__end {
