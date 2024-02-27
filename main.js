@@ -14,8 +14,11 @@ let scrollPos__check3 = document.getElementById("about__text").offsetTop-400;
 let scrollPos__check4 = document.getElementById("past__text").offsetTop-400;
 let scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
 let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
-// console.log(document.body.scrollHeight);
-// console.log(window.innerHeight);
+
+// init controller
+let SMcontroller = new ScrollMagic.Controller();
+
+
 // Map function to convert the range
 function mapRange(value, inMin, inMax, outMin, outMax) {
     return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
@@ -25,6 +28,17 @@ function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
+
+// build scene
+// let scene__steps = new ScrollMagic.Scene({triggerElement: "#trigger__steps", duration: 300})
+//   .triggerHook(0)
+//   .setPin("#steps__text", {pushFollowers: false})
+//   .addTo(SMcontroller);
+
+let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 400})
+  .triggerHook(0)
+  .setPin("#share__text", {pushFollowers: false})
+  .addTo(SMcontroller);
 
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
