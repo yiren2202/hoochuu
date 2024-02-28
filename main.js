@@ -3,7 +3,7 @@ window.onload = () => {
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let innerW = window.innerWidth;
-let cutebag__img_path = "img/lottiefile/plastic_0228_inline.json";
+let cutebag__img_path = "img/lottiefile/plastic_240228_inline_fixed.json";
 let cutebag__img_index = 1;
 let cutebag__img_start = 1;
 let cutebag__img_end = 279;
@@ -124,13 +124,13 @@ let splide = new Splide( '.splide', {
   type   : 'loop',
   focus  : 'center',
   perPage: 3,
-  height : '20rem',
+  height : '35vw',
   gap    : '5rem',
   padding: '5rem',
   breakpoints: {
     768: {
       perPage: 1,
-      height : '25rem',
+      height : '90vw',
       gap    : '1rem',
       
     },
