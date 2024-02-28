@@ -3,10 +3,10 @@ window.onload = () => {
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let innerW = window.innerWidth;
-let cutebag__img_path = "img/lottiefile/plastic_240216_2.json";
+let cutebag__img_path = "img/lottiefile/plastic_0228_inline.json";
 let cutebag__img_index = 1;
 let cutebag__img_start = 1;
-let cutebag__img_end = 91;
+let cutebag__img_end = 279;
 let scrollPos__temp;
 let scrollPos__check1 = document.getElementById("steps__text").offsetTop-400;
 let scrollPos__check2 = document.getElementById("reasons__text").offsetTop-400;
@@ -14,6 +14,7 @@ let scrollPos__check3 = document.getElementById("about__text").offsetTop-400;
 let scrollPos__check4 = document.getElementById("past__text").offsetTop-400;
 let scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
 let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
+let applybutton = document.getElementById("applybutton");
 
 // init controller
 let SMcontroller = new ScrollMagic.Controller();
@@ -48,12 +49,14 @@ function doSomething(scrollPos) {
   {
     bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
     lottie1.style.left = bagleft+"px";
+    applybutton.style.opacity = 0;
   }
   else if(scrollPos <= scrollPos__check2)
   {
     bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
     // console.log(bagleft);
     lottie1.style.left = bagleft+"px";
+    applybutton.style.opacity = 1;
   }
   else if(scrollPos <= scrollPos__check3)
   {
