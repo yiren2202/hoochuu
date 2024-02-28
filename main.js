@@ -120,12 +120,15 @@ let splide = new Splide( '.splide', {
   type   : 'loop',
   focus  : 'center',
   perPage: 3,
-  gap    : '2rem',
+  height : '20rem',
+  gap    : '5rem',
+  padding: '5rem',
   breakpoints: {
-    640: {
+    768: {
       perPage: 1,
-      gap    : '.7rem',
-      height : '6rem',
+      height : '25rem',
+      gap    : '1rem',
+      
     },
   },
 });
