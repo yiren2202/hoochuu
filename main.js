@@ -63,35 +63,37 @@ function doSomething(scrollPos) {
   if(scrollPos <= scrollPos__check1)
   {
     bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
-    lottie1.style.left = bagleft+"px";
+    // lottie1.style.left = bagleft+"px";
     applybutton.style.opacity = 0;
   }
   else if(scrollPos <= scrollPos__check2)
   {
     bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
     // console.log(bagleft);
-    lottie1.style.left = bagleft+"px";
+    // lottie1.style.left = bagleft+"px";
     applybutton.style.opacity = 1;
   }
   else if(scrollPos <= scrollPos__check3)
   {
-    lottie1.style.left = "50vw";
+    bagleft = innerW*0.5;
   }
   else if(scrollPos <= scrollPos__check4)
   {
     bagleft = innerW*0.5 - innerW*0.4*( (scrollPos-scrollPos__check3)/(scrollPos__check4-scrollPos__check3) ) ;
-    lottie1.style.left = bagleft+"px";
+    // lottie1.style.left = bagleft+"px";
   }
   else if(scrollPos <= scrollPos__check5)
   {
     bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
-    lottie1.style.left = bagleft+"px";
+    // lottie1.style.left = bagleft+"px";
   }
   else
   {
-    lottie1.style.left = "50vw";
+    bagleft = innerW*0.5;
   }
-  
+  if(innerW > 768) {
+    lottie1.style.left = bagleft+"px";
+  }
   cutebag__img_index = Math.round(mapRange(scrollPos, 0, scrollPos__bottom, 1, cutebag__img_end));
   // console.log(cutebag__img_index);
   animation1.goToAndStop(cutebag__img_index, true);
