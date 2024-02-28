@@ -37,10 +37,10 @@ img {
 .marquee-wall{
     display: flex;
     width: 100vw;
-    height: 45px;
+    height: 30px;
     background-color: #ff6748;
     color: #fff;
-    font-size:  20px;
+    font-size:  15px;
     line-height: 2.2;
     overflow: hidden;
 }
@@ -61,22 +61,22 @@ img {
     align-items: center;
 }
 
-.navbar__open {
+.sidebar__open {
     position: fixed;
-    top: 15vw;
-    right: 5vw;
+    top: 10vw;
+    right: 2vw;
     width: 10vw;
     cursor: pointer;
     z-index: 11;
 }
-.navbar__close {
+.sidebar__close {
     position: absolute;
     top: 20px;
     right: 20px;
     width: 20px;
     cursor: pointer;
 }
-.navbar__logo {
+.sidebar__logo {
     /* margin: 5vw 0 0; */
     padding: 5vw 5vw;
     width: 100%;
@@ -439,22 +439,22 @@ img {
 /***** Desktop *****/
 
 @media (min-width: 768px) {
-.navbar__open {
+.sidebar__open {
     position: fixed;
     top: 5vw;
-    right: 5vw;
+    right: 2vw;
     width: 5vw;
     cursor: pointer;
     z-index: 11;
 }
-.navbar__close {
+.sidebar__close {
     position: absolute;
     top: 30px;
     right: 30px;
     width: 30px;
     cursor: pointer;
 }
-.navbar__logo {
+.sidebar__logo {
     /* margin: 5vw 0 0; */
     padding: 5vw 5vw;
     width: 100%;

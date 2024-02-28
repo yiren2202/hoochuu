@@ -18,8 +18,8 @@ let scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
 let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
 let applybutton = document.getElementById("applybutton");
 
-let navbar__open = document.getElementById("navbar__open");
-let navbar__close = document.getElementById("navbar__close");
+let sidebar__open = document.getElementById("sidebar__open");
+let sidebar__close = document.getElementById("sidebar__close");
 let sidebar = document.getElementById("sidebar");
 
 // init controller
@@ -39,10 +39,10 @@ function preload_image(im_url) {
 lottie1.addEventListener("click", function() {
   window.location = "/apply";
 });
-navbar__open.addEventListener("click", function() {
+sidebar__open.addEventListener("click", function() {
   sidebar.style.right = 0;
 });
-navbar__close.addEventListener("click", function() {
+sidebar__close.addEventListener("click", function() {
   sidebar.style.right = "-480px";
 });
 // build scene
