@@ -140,6 +140,7 @@ img {
     top: -15vw;
     left: 50vw;
     transform: translate(-50%);
+    cursor: pointer;
     z-index: 6;
 }
 

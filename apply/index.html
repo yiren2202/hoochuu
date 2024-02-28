@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" >
+    <link rel="stylesheet" href="style.css">
+    <title>申請表單</title>
+</head>
+<body>
+    <div class="marquee-wall">
+        <div class="marquee-wrapper first">
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        </div>
+        <div class="marquee-wrapper second">
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+            <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        </div>
+    </div>
+    <div class="bg" id="bg">
+        <!--img id="bgimg" src="assets/BG.png"-->
+    </div>
+    <form id="data">
+    <div id="main" class="main">
+        <div id="title">
+            <h3>填寫店家資料</h3>
+            <p >Fill out store information</p>
+            <hr>
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="name">店家名稱</label>
+            <input type="text" id="name" name="store_name" placeholder="請填寫 ex.好初早餐店" required>
+        </div>
+
+        <div class="form-group">
+            <label for="products" id="products">店家主要販賣內容</label>
+            <div class="checkbox-item">
+                <input type="checkbox" id="breakfast" name="product" value="breakfast">
+                <label for="breakfast" class="short">早餐</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="boxlunch" name="product" value="boxlunch">
+                <label for="boxlunch" class="short">便當</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="coffee" name="product" value="coffee">
+                <label for="coffee" class="short">咖啡</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="products"></label>
+            <div class="checkbox-item">
+                <input type="checkbox" id="drink" name="product" value="drink">
+                <label for="drink" class="short">飲料</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="cloth" name="product" value="cloth">
+                <label for="cloth" class="short">服飾</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="gift" name="product" value="gift">
+                <label for="gift" class="short">個性小物</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="products"></label>
+            <div class="checkbox-item">
+                <input type="checkbox" id="delicious" name="product" value="delicious">
+                <label for="delicious" class="short">好吃的</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="stationery" name="product" value="stationery">
+                <label for="stationery" class="short">文具</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="book" name="product" value="book">
+                <label for="book" class="short">書籍</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="products"></label>
+            <div class="checkbox-item" id="other-item">
+                <input type="checkbox" id="other" name="product" value="other">
+                <label for="other">其他:</label>
+                <input type="text" id="other-text" placeholder="請填寫" style="display: none;">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name">聯絡人</label>
+            <input type="name" id="name" name="name" placeholder="0912345678" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">聯絡電話</label>
+            <input type="phone" id="phone" name="phone" placeholder="(00)1234-5678" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">聯絡信箱</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">店家地址</label>
+            <select id="city" name="city">
+                <option value="">請選擇地區</option>
+                <option value="taipei">台北市</option>
+                <option value="newtaipei">新北市</option>
+            </select>
+            <select id="county" name="county">
+                <option value="">區</option>
+                <!-- 这里将根据第一个下拉菜单的选择动态更新 -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="address"></label>
+            <input type="address" id="address" name="address" placeholder="請填寫詳細地址(街道，巷弄，門號，樓層)" required>
+        </div>
+        <div id="last" class="last">
+            <div class="form-group">
+                <label for="bags">需要塑膠袋數量</label>
+                <select id="bags" name="bags" class="bags">
+                    <option value=""></option>
+                    <option value=400>400</option>
+                    <option value=600>600</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="agree_flag">同意好出漫報前往拍照，作為宣傳素材使用</label>
+                <select id="agree_flag" name="agree_flag" class="agree_flag">
+                    <option value=""></option>
+                    <option value="y">同意</option>
+                    <option value="n">不同意</option>
+                </select>
+            </div>
+            <input class="submit" type="submit" value="填寫完成確認">
+        </div>
+    </div>
+    </form>
+    <div class="marquee-wall2">
+        <div class="marquee-wrapper first">
+            <div class="marquee2"><a href=""class="nostyle"><span>我們將會用最快的速度，把最好出漫報塑膠袋送到您的手中，請耐心等候</span></a></div>
+            <div class="marquee2"><a href=""class="nostyle"><span>我們將會用最快的速度，把最好出漫報塑膠袋送到您的手中，請耐心等候</span></a></div>
+            <div class="marquee2"><a href=""class="nostyle"><span>我們將會用最快的速度，把最好出漫報塑膠袋送到您的手中，請耐心等候</span></a></div>
+        </div>
+        <div class="marquee-wrapper second">
+            <div class="marquee2"><a href=""class="nostyle"><span>我們將會用最快的速度，把最好出漫報塑膠袋送到您的手中，請耐心等候</span></a></div>
+            <div class="marquee2"><a href=""class="nostyle"><span>我們將會用最快的速度，把最好出漫報塑膠袋送到您的手中，請耐心等候</span></a></div>
+            <div class="marquee2"><a href=""class="nostyle"><span>我們將會用最快的速度，把最好出漫報塑膠袋送到您的手中，請耐心等候</span></a></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

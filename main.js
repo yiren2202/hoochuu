@@ -8,6 +8,8 @@ let cutebag__img_index = 1;
 let cutebag__img_start = 1;
 let cutebag__img_end = 279;
 let scrollPos__temp;
+let lottie1 = document.getElementById("lottie1");
+let animation1;
 let scrollPos__check1 = document.getElementById("steps__text").offsetTop-400;
 let scrollPos__check2 = document.getElementById("reasons__text").offsetTop-400;
 let scrollPos__check3 = document.getElementById("about__text").offsetTop-400;
@@ -34,6 +36,9 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 
+lottie1.addEventListener("click", function() {
+  window.location = "/apply";
+});
 navbar__open.addEventListener("click", function() {
   sidebar.style.right = 0;
 });
@@ -105,8 +110,7 @@ document.addEventListener("scroll", function (e) {
   }
 });
 
-let lottie1 = document.getElementById("lottie1");
-let animation1;
+
 
 animation1 = lottie.loadAnimation({
   container: lottie1, // the dom element that will contain the animation

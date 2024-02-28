@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    background-color: #80ddd0;
+    overflow-x: hidden;
+}
+#title h3, p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+@keyframes scroll{
+    from{transform: translateX(100%)}
+    to{transform: translateX(-100%)}
+}
+@keyframes scroll2{
+    from{transform: translateX(0%)}
+    to{transform: translateX(-200%)}
+}
+.marquee-wall{
+    display: flex;
+    width: 100vw;
+    height: 45px;
+    background-color: #ff6748;
+    color: #fff;
+    font-size:  20px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+.marquee-wall2{
+    display: flex;
+    position: absolute;
+    top: 131vw;
+    width: 100vw;
+    height: 45px;
+    background-color: #ff6748;
+    color: #fff;
+    font-size:  20px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+.marquee-wrapper{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+.marquee-wrapper:nth-child(2){
+    animation: scroll2 20s linear infinite;
+    animation-delay: -10s;
+}
+.marquee{
+    width: 250px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marquee2{
+    width: 666px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg,#bgimg{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 130vw;
+    background-image: url("assets/BG.png");
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#main{
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    top: 20vw;
+}
+#last{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    left: 0%;
+    top: 20vw;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 15px; /* 设置间距 */
+}
+
+/* 设置 label 的宽度 */
+.form-group label {
+    min-width: 130px; /* 设置 label 的最小宽度 */
+    margin-right: 50px; /* 设置右侧边距 */
+}
+
+/* 设置 input 的宽度 */
+.form-group input {
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px; /* 设置输入框和文本域的圆角 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+}
+.form-group select {
+    border-radius: 20px;
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+    margin-right: 10px;
+}
+#bags{
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px;
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+    margin-right: 0px;
+}
+#agree_flag{
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px;
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+    margin-right: 0px;
+}
+#colortitle {
+    display: flex;
+    align-items: stretch; /* 垂直居中对齐 */
+}
+.checkbox-item {
+    display: inline-block; /* 将复选框项设置为行内块元素 */
+    width: calc(30% - 10px); /* 设置宽度为三分之一，并减去间距 */
+    margin-right: 60px; /* 设置右侧间距 */
+    vertical-align: top; /* 使复选框项顶部对齐 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    font-weight: normal;
+    background-color: white;
+    flex: 1;
+}
+
+.checkbox-item label {
+    margin-left: 5px;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+    color: green; /* 将勾选的标签文本颜色设置为绿色 */
+}
+
+.checkbox-item [type="checkbox"]:checked {
+    border: green; /* 将勾选的复选框边框颜色设置为绿色 */
+}
+
+#other-item {
+    display: inline-block; /* 将复选框项设置为行内块元素 */
+    width: 50%; /* 设置宽度为三分之一，并减去间距 */
+    margin-right: 10vw; /* 设置右侧间距 */
+    vertical-align: top; /* 使复选框项顶部对齐 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+}
+
+#other-text{
+    position: relative;
+    left: -5%;
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    width: 50%;
+    border-radius: 10px; /* 设置输入框和文本域的圆角 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+}
+
+.submit{
+    display: block;
+    position: relative;
+    width: 20vw;
+    top: 5vw;
+    left: 25vw;
+    border: 0px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (orientation: portrait){
+    #main{
+        display: block;
+        position: absolute;
+        width: 90%;
+        height: 120vw;
+        left: 5vw;
+        top: 40vw;
+    }
+    #last{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        left: 0%;
+        top: 190vw;
+    }
+    .form-group label {
+        min-width: 130px; /* 设置 label 的最小宽度 */
+        margin-right: 50px; /* 设置右侧边距 */
+    }
+    .short{
+        min-width: 1px !important;
+        margin-right: 1px !important;
+    }
+    .marquee-wall2{
+        top: 360vw;
+    }
+    .checkbox-item {
+        display: inline-block; /* 将复选框项设置为行内块元素 */
+        width: calc(20% - 1px); /* 设置宽度为三分之一，并减去间距 */
+        margin-right: 1px; /* 设置右侧间距 */
+        vertical-align: top; /* 使复选框项顶部对齐 */
+        border: 1px solid #ccc; /* 添加边框样式 */
+        border-radius: 20px; /* 添加圆角 */
+        padding: 5px; /* 添加内边距 */
+        font-weight: normal;
+        background-color: white;
+    }
+    .submit{
+        display: block;
+        position: relative;
+        width: 200px;
+        top: 5vw;
+        left: 45vw;
+        transform: translateX(-100px);
+        border: 0px solid #ccc; /* 添加边框样式 */
+        border-radius: 20px; /* 添加圆角 */
+        padding: 5px; /* 添加内边距 */
+        background-color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .bg,#bgimg{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 360vw;
+        background-image: url("assets/BG2.png");
+        background-position: top center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,123 @@
+@media (orientation: portrait){
+    #main{
+        display: block;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        left: 15%;
+        top: 17vw;
+    }
+    #last{
+        display: block;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        left: 15%;
+        top: 70vw;
+    }
+}
+
+#title h3, p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.bg,#bgimg{
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 15px; /* 设置间距 */
+}
+
+/* 设置 label 的宽度 */
+.form-group label {
+    min-width: 150px; /* 设置 label 的最小宽度 */
+    margin-right: 50px; /* 设置右侧边距 */
+}
+
+/* 设置 input 的宽度 */
+.form-group input {
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px; /* 设置输入框和文本域的圆角 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+}
+.form-group select {
+    border-radius: 20px;
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+    margin-right: 10px;
+}
+#beg{
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px;
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+    margin-right: 0px;
+}
+
+#colortitle {
+    display: flex;
+    align-items: stretch; /* 垂直居中对齐 */
+}
+.checkbox-item {
+    display: inline-block; /* 将复选框项设置为行内块元素 */
+    width: calc(30% - 10px); /* 设置宽度为三分之一，并减去间距 */
+    margin-right: 60px; /* 设置右侧间距 */
+    vertical-align: top; /* 使复选框项顶部对齐 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    font-weight: normal;
+    background-color: white;
+}
+
+.checkbox-item label {
+    margin-left: 5px;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+    color: green; /* 将勾选的标签文本颜色设置为绿色 */
+}
+
+.checkbox-item [type="checkbox"]:checked {
+    border: green; /* 将勾选的复选框边框颜色设置为绿色 */
+}
+
+#other-item {
+    display: inline-block; /* 将复选框项设置为行内块元素 */
+    width: 50%; /* 设置宽度为三分之一，并减去间距 */
+    margin-right: 60px; /* 设置右侧间距 */
+    vertical-align: top; /* 使复选框项顶部对齐 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+}
+
+#other-text{
+    position: relative;
+    left: -5%;
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    width: 50%;
+    border-radius: 10px; /* 设置输入框和文本域的圆角 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+}
+
+.submit{
+    display: block;
+    position: absolute;
+    width: 20vw;
+    top: 80vw;
+    left: 40vw;
+    border: 0px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
