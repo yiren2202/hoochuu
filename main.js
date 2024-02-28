@@ -46,7 +46,7 @@ let scene__apply = new ScrollMagic.Scene({triggerElement: "#trigger__apply", dur
   .setPin("#applybutton", {pushFollowers: false})
   .addTo(SMcontroller);
 
-let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 400})
+let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 300})
   .triggerHook(0)
   .setPin("#share__text", {pushFollowers: false})
   .addTo(SMcontroller);

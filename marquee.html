@@ -1,0 +1,75 @@
+MARQUEE
+
+HTML
+
+<div class="marquee-wall">
+    <div class="marquee-wrapper first">
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+    </div>
+    <div class="marquee-wrapper second">
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+        <div class="marquee"><a href="https://www.google.com/"class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
+    </div>
+</div>
+
+
+
+
+
+
+CSS   
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+@keyframes scroll{
+    from{transform: translateX(100%)}
+    to{transform: translateX(-100%)}
+}
+@keyframes scroll2{
+    from{transform: translateX(0%)}
+    to{transform: translateX(-200%)}
+}
+.marquee-wall{
+    display: flex;
+    width: 100vw;
+    height: 45px;
+    background-color: #ff6748;
+    color: #fff;
+    font-size:  20px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+.marquee-wrapper{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+.marquee-wrapper:nth-child(2){
+    animation: scroll2 20s linear infinite;
+    animation-delay: -10s;
+}
+.marquee{
+    width: 250px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
