@@ -49,15 +49,33 @@ document.getElementById('data').addEventListener('submit', function(event) {
 
     // 将数据转换为 JSON 格式
     var jsonData = JSON.stringify(formObject);
+    console.log(jsonData);
+    // // 创建一个 Blob 对象
+    // var blob = new Blob([jsonData], { type: 'application/json' });
 
-    // 创建一个 Blob 对象
-    var blob = new Blob([jsonData], { type: 'application/json' });
+    // // 创建一个 a 标签，并设置下载属性
+    // var link = document.createElement('a');
+    // link.href = URL.createObjectURL(blob);
+    // link.download = 'form_data.json';
 
-    // 创建一个 a 标签，并设置下载属性
-    var link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'form_data.json';
+    // // 触发点击事件，下载 JSON 文件
+    // link.click();
 
-    // 触发点击事件，下载 JSON 文件
-    link.click();
+    // Send a POST request
+    axios({
+        method: 'post',
+        url: '/users',
+        baseURL: 'https://www.hoochuupaper.com/app/api/event/catchad/hoochuu202402/',
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'Access-Control-Allow-Origin': '*',
+        },
+        data: jsonData
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 });
