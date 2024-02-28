@@ -16,6 +16,10 @@ let scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
 let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
 let applybutton = document.getElementById("applybutton");
 
+let navbar__open = document.getElementById("navbar__open");
+let navbar__close = document.getElementById("navbar__close");
+let sidebar = document.getElementById("sidebar");
+
 // init controller
 let SMcontroller = new ScrollMagic.Controller();
 
@@ -30,6 +34,12 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 
+navbar__open.addEventListener("click", function() {
+  sidebar.style.right = 0;
+});
+navbar__close.addEventListener("click", function() {
+  sidebar.style.right = "-480px";
+});
 // build scene
 let scene__apply = new ScrollMagic.Scene({triggerElement: "#trigger__apply", duration: 300})
   .triggerHook(0)
