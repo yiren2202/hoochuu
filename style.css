@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@font-face {
+    font-family: "Galvji";
+    src:
+      url("/fonts/Galvji.ttc") format("ttc");
+}
 
 * {   margin: 0;   padding: 0;   box-sizing: border-box; } 
 html, body{
@@ -7,7 +12,7 @@ html, body{
     box-sizing: border-box;
     overscroll-behavior: none;
     background-color: #fff;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', 'Galvji', sans-serif;
     
 }
 
@@ -15,7 +20,7 @@ html, body{
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
 }
 a.nostyle:visited {
     text-decoration: inherit;
@@ -25,7 +30,12 @@ a.nostyle:visited {
 img {
     width: 100%;
 }
-
+.font__en {
+    font-family: 'Galvji';
+}
+.font__orange {
+    color: #ff6748;
+}
 @keyframes scroll{
     from{transform: translateX(100%)}
     to{transform: translateX(-100%)}
@@ -119,6 +129,14 @@ img {
     text-transform: uppercase;
     position: relative;
     padding-bottom: 7px;
+}
+.sidebar-anchor:active::before{
+    content:url('/img/barline.png');
+    position: absolute; 
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+    z-index:100;
 }
 .sidebar__text {
     text-align: center;
@@ -305,6 +323,7 @@ img {
     margin: 2vw 0 0 0;
     /* padding: 0 0 0 10vw; */
     text-align: center;
+    letter-spacing: 0.1rem;
 }
 .about__chuu {
     position: relative;
@@ -315,6 +334,7 @@ img {
     position: relative;
     /* left: -10vw; */
     text-align: center;
+    letter-spacing: 0.1rem;
 }
 /* past */
 .past__text {
@@ -331,24 +351,51 @@ img {
 .past__left {
     padding:  2vw 5vw;
     width: 100%;
+    font-size: 1rem;
     font-weight: 600;
 }
 .past__right {
     flex-grow: 1;
     padding: 2vw 5vw;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
     border-top: #ff6748 1px solid;
 }
 /* splide */
 .splide {
     z-index: 7;
 }
+
+.splide__arrow {
+    background-color: transparent;
+    width: 2rem;
+    top: 105%;
+}
+.splide__pagination {
+    bottom: -1.5rem;
+}
+.splide__pagination__page {
+    background: #50ec72;
+}
+.splide__pagination__page.is-active {
+    background: #ff6748;
+}
 .splide__slide {
     background-color: #fff;
     border: #ff6748 1px solid;
     border-radius: 45px;
+    overflow: hidden;
 }
 .splide__slide p {
     margin: 2vw;
+}
+.splide__slidenumber {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: #ff6748;
+    font-size: 1.5rem;
 }
 /* share */
 .share__text {
@@ -375,7 +422,7 @@ img {
 .share__right {
     position: relative;
     /* float: right; */
-    padding: 20vw 0 0;
+    padding: 50vw 0 0;
     width: 100%;
 }
 .share__icon {
@@ -386,6 +433,9 @@ img {
 }
 .share__icon-text {
     padding: 10vw 0;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
     text-align: center;
 }
 /* footer */
@@ -420,14 +470,18 @@ img {
 .footer__text {
     margin: 10vw 0 0 0;
     font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 2;
 }
 .footer__link {
     margin: 10vw 0 0 0;
     font-size: 0.8rem;
+    line-height: 2;
 }
 
 .footer__ig, .footer__email {
     width: 10%;
+    margin: 0 2%;
 }
 
 .footer .marquee-wall{
@@ -582,8 +636,8 @@ img {
 }
 .steps__title {
     margin: 0;
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
 }
 .steps__text_free {
     color: #ff6748;
@@ -603,6 +657,9 @@ img {
     padding: 2%;
     font-size: 1rem;
 }
+.steps__item.steps__item_two .steps__item_text {
+    padding: 0 2%;
+}
 .steps__item.steps__item_right {
     float: right;
     width: 50%;
@@ -617,7 +674,7 @@ img {
     float:right;
     display: block;
     width:60%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* reasons */
@@ -749,7 +806,7 @@ img {
 .share__right {
     position: relative;
     float: right;
-    padding: 10vw 0 0;
+    padding: 0;
     width: 30%;
 }
 .share__icon {
