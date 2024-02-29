@@ -20,12 +20,12 @@ document.getElementById('city').addEventListener('change', function() {
     citySelect.innerHTML = '';
 
     // Populate new options based on the selected country
-    if (country === 'taipei') {
-        addOption(citySelect, '松山區', 'Songshan');
-        addOption(citySelect, '信義區', 'Xinyi');
-    } else if (country === 'newtaipei') {
-        addOption(citySelect, '三重區', 'Sanchong');
-        addOption(citySelect, '新莊區', 'Xinzhuang');
+    if (country === '台北市') {
+        addOption(citySelect, '松山區', '松山區');
+        addOption(citySelect, '信義區', 'X信義區');
+    } else if (country === '新北市') {
+        addOption(citySelect, '三重區', '三重區');
+        addOption(citySelect, '新莊區', '新莊區');
     }
 });
 

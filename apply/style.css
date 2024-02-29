@@ -123,24 +123,27 @@ a.nostyle:visited {
     padding: 8px; /* 设置内边距 */
 }
 .form-group select {
-    border-radius: 20px;
-    border: 1px solid #ccc; /* 设置边框样式 */
-    padding: 8px; /* 设置内边距 */
-    margin-right: 10px;
+    /*-webkit-appearance: none;*/
+    border-radius: 20px !important;
+    border: 1px solid #ccc !important; /* 设置边框样式 */
+    padding: 8px !important; /* 设置内边距 */
+    margin-right: 10px !important;
 }
-#bags{
-    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
-    border-radius: 20px;
-    border: 1px solid #ccc; /* 设置边框样式 */
-    padding: 8px; /* 设置内边距 */
-    margin-right: 0px;
+#bags {
+    /*-webkit-appearance: none;*/
+    flex: 1 !important !important; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px !important;
+    border: 1px solid #ccc !important; /* 设置边框样式 */
+    padding: 8px !important; /* 设置内边距 */
+    margin-right: 0px !important;
 }
 #agree_flag{
-    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
-    border-radius: 20px;
-    border: 1px solid #ccc; /* 设置边框样式 */
-    padding: 8px; /* 设置内边距 */
-    margin-right: 0px;
+    /*-webkit-appearance: none;*/
+    flex: 1 !important; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px !important;
+    border: 1px solid #ccc !important; /* 设置边框样式 */
+    padding: 8px !important; /* 设置内边距 */
+    margin-right: 0px !important;
 }
 #colortitle {
     display: flex;
