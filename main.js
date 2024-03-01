@@ -3,6 +3,7 @@ window.onload = () => {
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let innerW = window.innerWidth;
+let innerH = window.innerHeight;
 let cutebag__img_path = "img/lottiefile/plastic_240228_inline_fixed.json";
 let cutebag__img_index = 1;
 let cutebag__img_start = 1;
@@ -36,6 +37,11 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 
+window.addEventListener("resize", function() {
+  innerW = window.innerWidth;
+  innerH = window.innerHeight;
+  doSomething(lastKnownScrollPosition);
+});
 lottie1.addEventListener("click", function() {
   window.location = "/apply";
 });
