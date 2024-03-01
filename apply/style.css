@@ -237,6 +237,16 @@ a.nostyle:visited {
     left: 25vw;
     top: 10vw;
 }
+.popup2{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    float: right;
+    text-align: center;
+    width: 50%;
+    left: 25vw;
+    top: 10vw;
+}
 
 .square {
     position: absolute; /* 设置绝对定位 */
@@ -328,6 +338,11 @@ a.nostyle:visited {
         background-repeat: no-repeat;
     }
     .popup{
+        width: 80%;
+        left: 10vw;
+        top: 25vw;
+    }
+    .popup2{
         width: 80%;
         left: 10vw;
         top: 25vw;
