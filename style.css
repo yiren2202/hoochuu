@@ -624,9 +624,9 @@ img {
     opacity: 1;
 }
 #lottie1 {
-    width: 40vw;
+    width: 37vw;
     position: fixed;
-    top: -15vh;
+    top: -18vh;
     left: 50vw;
     transform: translate(-50%);
     z-index: 6;
@@ -668,7 +668,7 @@ img {
 }
 .landing__text {
     background-image: url("img/p1.png");
-    background-position: left 0 top 15vw;
+    background-position: left 0 top 14vw;
     height: 70vw;
 }
 .landing__text_en {
@@ -749,7 +749,7 @@ img {
     width: 50%;
 }
 .reasons__item {
-    top: 15vw;
+    top: 10vw;
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
