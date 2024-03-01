@@ -359,6 +359,12 @@ a.nostyle:visited {
         font-size: 30px !important;
         border-radius: 50px !important;
     }
+    .marquee-wall2{
+        top: 140vw;
+    }
+    #last{
+        top: 20vh;
+    }
     .checkbox-item {
         border-radius: 50px !important; /* 添加圆角 */
     }
