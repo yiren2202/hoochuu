@@ -89,13 +89,11 @@ function doSomething(scrollPos) {
   if(scrollPos <= scrollPos__check1)
   {
     bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
-    // lottie1.style.left = bagleft+"px";
   }
   else if(scrollPos <= scrollPos__check2)
   {
     bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
     // console.log(bagleft);
-    // lottie1.style.left = bagleft+"px";
   }
   else if(scrollPos <= scrollPos__check3)
   {
@@ -104,12 +102,10 @@ function doSomething(scrollPos) {
   else if(scrollPos <= scrollPos__check4)
   {
     bagleft = innerW*0.5 - innerW*0.4*( (scrollPos-scrollPos__check3)/(scrollPos__check4-scrollPos__check3) ) ;
-    // lottie1.style.left = bagleft+"px";
   }
   else if(scrollPos <= scrollPos__check5)
   {
     bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
-    // lottie1.style.left = bagleft+"px";
   }
   else
   {

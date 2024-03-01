@@ -1,3 +1,21 @@
+window.onload = () => {
+    // Lottie Animation
+    let cutebag__img_path = "../img/lottiefile/plastic_240228_inline_fixed.json";
+    let cutebag__img_index = 1;
+    let cutebag__img_start = 1;
+    let cutebag__img_end = 279;
+    let lottie1 = document.getElementById("lottie1");
+    let animation1;
+
+    animation1 = lottie.loadAnimation({
+        container: lottie1, // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: cutebag__img_path // the path to the animation json
+      });
+}
+
 // 获取复选框和文本输入框的引用
 const otherCheckbox = document.getElementById('other');
 const otherTextInput = document.getElementById('other-text');
