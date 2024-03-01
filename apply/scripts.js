@@ -20,9 +20,19 @@ document.getElementById('city').addEventListener('change', function() {
     citySelect.innerHTML = '';
 
     // Populate new options based on the selected country
-    if (country === '台北市') {
+    if (country === '臺北市') {
         addOption(citySelect, '松山區', '松山區');
-        addOption(citySelect, '信義區', 'X信義區');
+        addOption(citySelect, '信義區', '信義區');
+        addOption(citySelect, '大安區', '大安區');
+        addOption(citySelect, '中山區', '中山區');
+        addOption(citySelect, '中正區', '中正區');
+        addOption(citySelect, '大同區', '大同區');
+        addOption(citySelect, '萬華區', '萬華區');
+        addOption(citySelect, '文山區', '文山區');
+        addOption(citySelect, '南港區', '南港區');
+        addOption(citySelect, '內湖區', '內湖區');
+        addOption(citySelect, '士林區', '士林區');
+        addOption(citySelect, '北投區', '北投區');
     } else if (country === '新北市') {
         addOption(citySelect, '三重區', '三重區');
         addOption(citySelect, '新莊區', '新莊區');
