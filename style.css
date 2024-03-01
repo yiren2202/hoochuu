@@ -197,18 +197,11 @@ img {
     width: 100%;
 }
 
-.bg__cloud {
-    width: 100vw;
-}
-
 .logo {
     position: absolute;
     top: 10vw;
     left: 6vw;
     width: 16vw;
-}
-.logo img {
-    width: 100%;
 }
 .founder {
     position: absolute;
@@ -224,6 +217,7 @@ img {
     background-repeat: no-repeat;
     background-position: left 0 top 15vw;
     background-size: contain;
+    position: relative;
     padding: 0;
     width: 100vw;
     height: 180vw;
@@ -236,6 +230,13 @@ img {
 .landing__text_tc {
     font-size: 1.6rem;
     letter-spacing: 0.5rem;
+}
+.landing__words {
+    position: sticky;
+    top: 10vw;
+    left: 0;
+    width: 100vw;
+    height: 50vw;
 }
 /* steps */
 .steps__text {
@@ -664,7 +665,7 @@ img {
 .landing__text {
     background-image: url("img/p1.png");
     background-repeat: no-repeat;
-    background-position: left 0 top 5vw;
+    background-position: left 0 top 15vw;
     background-size: contain;
     padding: 0;
     width: 100vw;
@@ -679,6 +680,11 @@ img {
     font-size: 1.6rem;
     letter-spacing: 0.5rem;
 }
+.landing__words {
+    top: 10vw;
+    height: 50vw;
+}
+
 /* steps */
 .steps__text {
     width: 100vw;
