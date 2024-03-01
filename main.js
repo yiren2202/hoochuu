@@ -51,11 +51,7 @@ sidebar__open.addEventListener("click", function() {
 sidebar__close.addEventListener("click", function() {
   sidebar.style.right = "-480px";
 });
-// build scene
-// let scene__apply = new ScrollMagic.Scene({triggerElement: "#trigger__apply", duration: 300})
-//   .triggerHook(0)
-//   .setPin("#applybutton", {pushFollowers: false})
-//   .addTo(SMcontroller);
+
 // build scenes
 let revealElements = document.getElementsByClassName("digit");
 for (var i=0; i<revealElements.length; i++) { // create a scene for each element
@@ -67,6 +63,18 @@ for (var i=0; i<revealElements.length; i++) { // create a scene for each element
           .setClassToggle(revealElements[i], "visible") // add class toggle
           .addTo(SMcontroller);
 }
+let revealElements2 = document.getElementsByClassName("reasons__digit");
+let revealElements2triggers = document.getElementsByClassName("trigger__reasons__digit");
+for (var i=0; i<revealElements2.length; i++) { // create a scene for each element
+  new ScrollMagic.Scene({
+            triggerElement: revealElements2triggers[i], // y value has modified, so we use other element as trigger
+            offset: 50,												 // start a little later
+            triggerHook: 0.2,
+          })
+          .setClassToggle(revealElements2[i], "visible") // add class toggle
+          .addTo(SMcontroller);
+}
+
 let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 300})
   .triggerHook(0)
   .setPin("#share__text", {pushFollowers: false})
