@@ -52,11 +52,21 @@ sidebar__close.addEventListener("click", function() {
   sidebar.style.right = "-480px";
 });
 // build scene
-let scene__apply = new ScrollMagic.Scene({triggerElement: "#trigger__apply", duration: 300})
-  .triggerHook(0)
-  .setPin("#applybutton", {pushFollowers: false})
-  .addTo(SMcontroller);
-
+// let scene__apply = new ScrollMagic.Scene({triggerElement: "#trigger__apply", duration: 300})
+//   .triggerHook(0)
+//   .setPin("#applybutton", {pushFollowers: false})
+//   .addTo(SMcontroller);
+// build scenes
+let revealElements = document.getElementsByClassName("digit");
+for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+  new ScrollMagic.Scene({
+            triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+            offset: 50,												 // start a little later
+            triggerHook: 0.9,
+          })
+          .setClassToggle(revealElements[i], "visible") // add class toggle
+          .addTo(SMcontroller);
+}
 let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 300})
   .triggerHook(0)
   .setPin("#share__text", {pushFollowers: false})
@@ -65,19 +75,19 @@ let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", dur
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
   // console.log(scrollPos);
+  let bagtop = 0;
   let bagleft = 0;
+  bagtop = innerH*-0.15;
   if(scrollPos <= scrollPos__check1)
   {
     bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
     // lottie1.style.left = bagleft+"px";
-    applybutton.style.opacity = 0;
   }
   else if(scrollPos <= scrollPos__check2)
   {
     bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
     // console.log(bagleft);
     // lottie1.style.left = bagleft+"px";
-    applybutton.style.opacity = 1;
   }
   else if(scrollPos <= scrollPos__check3)
   {
@@ -98,6 +108,7 @@ function doSomething(scrollPos) {
     bagleft = innerW*0.5;
   }
   if(innerW > 768) {
+    lottie1.style.top = bagtop+"px";
     lottie1.style.left = bagleft+"px";
   }
   cutebag__img_index = Math.round(mapRange(scrollPos, 0, scrollPos__bottom, 1, cutebag__img_end));

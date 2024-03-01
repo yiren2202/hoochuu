@@ -13,7 +13,7 @@ html, body{
     overscroll-behavior: none;
     background-color: #fff;
     font-family: 'Noto Sans TC', 'Galvji', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 
@@ -35,6 +35,26 @@ img {
 }
 .font__orange {
     color: #ff6748;
+}
+
+/* CSS Animation */
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(-10deg); } 
+    100% { -moz-transform: rotate(10deg); } 
+}
+@-webkit-keyframes spin { 
+    0% { -webkit-transform: rotate(-10deg); } 
+    100% { -webkit-transform: rotate(10deg); } 
+}
+@keyframes spin { 
+    0% { 
+        -webkit-transform: rotate(-10deg); 
+        transform:rotate(-10deg); 
+    } 
+    100% { 
+        -webkit-transform: rotate(10deg);
+        transform:rotate(10deg);
+    } 
 }
 @keyframes scroll{
     from{transform: translateX(100%)}
@@ -148,17 +168,17 @@ img {
     position: fixed;
     bottom: 3vw;
     left: 3vw;
-    width: 10vw;
+    width: 25vw;
     z-index: 8;
-    opacity: 0;
-}
-.applybutton img {
-    width: 100%;
+    opacity: 1;
+    -webkit-animation:spin 0.5s linear alternate infinite;
+    -moz-animation:spin 0.5s linear alternate infinite;
+    animation:spin 0.5s linear alternate infinite;
 }
 #lottie1 {
     width: 40vw;
     position: fixed;
-    top: -15vw;
+    top: 40vh;
     left: 50vw;
     transform: translate(-50%);
     cursor: pointer;
@@ -261,6 +281,39 @@ img {
     width:60%;
     padding: 5% 0 0 5%;
     font-size: 1.5rem;
+}
+.digit {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+         -moz-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+             -o-transform: translateX(-40px);
+                    transform: translateX(-40px);
+    -webkit-transition: all 0.6s ease-out;
+         -moz-transition: all 0.6s ease-out;
+            -ms-transition: all 0.6s ease-out;
+             -o-transition: all 0.6s ease-out;
+                    transition: all 0.6s ease-out;
+}
+.digit.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
+.digit:nth-child(2) {
+    margin-top: 50px;
+}
+.digit:nth-child(3) {
+    margin-top: 100px;
+}
+.digit:nth-child(4) {
+    margin-top: 50px;
+}
+.digit:nth-child(5) {
+    margin-top: 200px;
 }
 
 /* reasons */
@@ -563,15 +616,12 @@ img {
     left: 3vw;
     width: 10vw;
     z-index: 8;
-    opacity: 0;
-}
-.applybutton img {
-    width: 100%;
+    opacity: 1;
 }
 #lottie1 {
     width: 40vw;
     position: fixed;
-    top: -15vw;
+    top: -15vh;
     left: 50vw;
     transform: translate(-50%);
     z-index: 6;
@@ -693,7 +743,7 @@ img {
 }
 .reasons__item {
     position: sticky;
-    top: 5vw;
+    top: 15vw;
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
@@ -862,5 +912,20 @@ img {
     bottom: 0;
     left: 0;
 }
+
+}
+
+/***** Large Desktop *****/
+
+@media (min-width: 1920px) {
+
+
+
+
+
+
+
+
+
 
 }
