@@ -14,6 +14,8 @@ window.onload = () => {
         autoplay: true,
         path: cutebag__img_path // the path to the animation json
       });
+      animation1.goToAndStop(228, true);
+      animation1.playSegments([228,267], false);
 }
 
 // 获取复选框和文本输入框的引用
