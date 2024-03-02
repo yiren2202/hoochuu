@@ -83,38 +83,58 @@ let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", dur
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作
   // console.log(scrollPos);
-  let bagtop = 0;
-  let bagleft = 0;
-  bagtop = innerH*-0.15;
-  if(scrollPos <= scrollPos__check1)
-  {
-    bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1) ;
-  }
-  else if(scrollPos <= scrollPos__check2)
-  {
-    bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
-    // console.log(bagleft);
-  }
-  else if(scrollPos <= scrollPos__check3)
-  {
+  let bagtop;
+  let bagleft;
+  
+  if(innerW < 768) {
+    bagtop = innerH*0.25;
     bagleft = innerW*0.5;
+
+    if(scrollPos <= scrollPos__check1)
+    {
+      bagtop = innerH*0.25 - innerH*0.37*(scrollPos/scrollPos__check1) ;
+    }
+    else
+    {
+      bagtop = innerH*-0.12;
+    }
   }
-  else if(scrollPos <= scrollPos__check4)
-  {
-    bagleft = innerW*0.5 - innerW*0.4*( (scrollPos-scrollPos__check3)/(scrollPos__check4-scrollPos__check3) ) ;
-  }
-  else if(scrollPos <= scrollPos__check5)
-  {
-    bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
-  }
-  else
-  {
+  else if(innerW >= 768) {
+    bagtop = innerH*-0.15;
     bagleft = innerW*0.5;
+
+    if(scrollPos <= scrollPos__check1)
+    {
+      bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1);
+    }
+    else if(scrollPos <= scrollPos__check2)
+    {
+      bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
+      // console.log(bagleft);
+    }
+    else if(scrollPos <= scrollPos__check3)
+    {
+      bagleft = innerW*0.5;
+    }
+    else if(scrollPos <= scrollPos__check4)
+    {
+      bagleft = innerW*0.5 - innerW*0.4*( (scrollPos-scrollPos__check3)/(scrollPos__check4-scrollPos__check3) ) ;
+    }
+    else if(scrollPos <= scrollPos__check5)
+    {
+      bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
+    }
+    else
+    {
+      bagleft = innerW*0.5;
+    }
   }
-  if(innerW > 768) {
-    lottie1.style.top = bagtop+"px";
-    lottie1.style.left = bagleft+"px";
-  }
+
+  // console.log(bagtop);
+  // console.log(bagleft);
+  lottie1.style.top = bagtop+"px";
+  lottie1.style.left = bagleft+"px";
+  
   cutebag__img_index = Math.round(mapRange(scrollPos, 0, scrollPos__bottom, 1, cutebag__img_end));
   // console.log(cutebag__img_index);
   animation1.goToAndStop(cutebag__img_index, true);

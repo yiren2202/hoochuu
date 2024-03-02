@@ -151,9 +151,9 @@ img {
     animation:spin 0.5s linear alternate infinite;
 }
 #lottie1 {
-    width: 40vw;
+    width: 60vw;
     position: fixed;
-    top: 40vh;
+    top: 25vh;
     left: 50vw;
     transform: translate(-50%);
     cursor: pointer;
