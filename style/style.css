@@ -2,7 +2,7 @@
 @font-face {
     font-family: "Galvji";
     src:
-      url("/fonts/Galvji.ttc") format("ttc");
+      url("../fonts/Galvji.ttc") format("ttc");
 }
 
 * {   margin: 0;   padding: 0;   box-sizing: border-box; } 
@@ -64,32 +64,7 @@ img {
     from{transform: translateX(0%)}
     to{transform: translateX(-200%)}
 }
-.marquee-wall{
-    display: flex;
-    width: 100vw;
-    height: 30px;
-    background-color: #ff6748;
-    color: #fff;
-    font-size:  15px;
-    line-height: 2.2;
-    overflow: hidden;
-}
-.marquee-wrapper{
-    display: flex;
-    animation: scroll 20s linear infinite;
-}
-.marquee-wrapper:nth-child(2){
-    animation: scroll2 20s linear infinite;
-    animation-delay: -10s;
-}
-.marquee{
-    width: 250px;
-    margin: 0 -20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .sidebar__open {
     position: fixed;
@@ -120,7 +95,7 @@ img {
     right: -480px;
     padding: 200px 0 0 100px;
     /* background-color: #ff6748; */
-    background-image: url("img/barbg.png");
+    background-image: url("../img/barbg.png");
     background-repeat: no-repeat;
     background-position: right 0 top 0;
     background-size: cover;
@@ -151,7 +126,7 @@ img {
     padding-bottom: 7px;
 }
 .sidebar-anchor:active::before{
-    content:url('/img/barline.png');
+    content:url('../img/barline.png');
     position: absolute; 
     left: 50%;
     top: 1rem;
@@ -213,7 +188,7 @@ img {
     width: 100%;
 }
 .landing__text {
-    background-image: url("img/mobile/p1.png");
+    background-image: url("../img/mobile/p1.png");
     background-repeat: no-repeat;
     background-position: left 0 top 15vw;
     background-size: contain;
@@ -232,7 +207,7 @@ img {
     letter-spacing: 0.5rem;
 }
 .landing__words {
-    background-image: url("img/mobile/p1_words.png");
+    background-image: url("../img/mobile/p1_words.png");
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
@@ -323,7 +298,7 @@ img {
 
 /* reasons */
 .reasons__text {
-    background-image: url("img/mobile/reasonblue.png");
+    background-image: url("../img/mobile/reasonblue.png");
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
@@ -347,19 +322,19 @@ img {
     margin: 20vw 0;
 }
 .reasons__item1 {
-    background-image: url("img/mobile/reason1.png");
+    background-image: url("../img/mobile/reason1.png");
 }
 .reasons__item2 {
-    background-image: url("img/mobile/reason2.png");
+    background-image: url("../img/mobile/reason2.png");
 }
 .reasons__item3 {
-    background-image: url("img/mobile/reason3.png");
+    background-image: url("../img/mobile/reason3.png");
 }
 .reasons__item4 {
-    background-image: url("img/mobile/reason4.png");
+    background-image: url("../img/mobile/reason4.png");
 }
 .reasons__item5 {
-    background-image: url("img/mobile/reason5.png");
+    background-image: url("../img/mobile/reason5.png");
 }
 
 .reasons__end {
@@ -463,7 +438,7 @@ img {
     height: 120vw;
 }
 .share__left {
-    background-image: url("img/mobile/p10.png");
+    background-image: url("../img/mobile/p10.png");
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
@@ -497,7 +472,7 @@ img {
 }
 /* footer */
 .footer {
-    background-image: url("img/mobile/p11.png");
+    background-image: url("../img/mobile/p11.png");
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
@@ -541,41 +516,8 @@ img {
     margin: 0 2%;
 }
 
-.footer .marquee-wall{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 /***** Desktop *****/
-
 @media (min-width: 768px) {
-    .marquee-wall{
-        display: flex;
-        width: 100vw;
-        height: 40px;
-        background-color: #ff6748;
-        color: #fff;
-        font-size:  20px;
-        line-height: 2.2;
-        overflow: hidden;
-    }
-    .marquee-wrapper{
-        display: flex;
-        animation: scroll 20s linear infinite;
-    }
-    .marquee-wrapper:nth-child(2){
-        animation: scroll2 20s linear infinite;
-        animation-delay: -10s;
-    }
-    .marquee{
-        width: 250px;
-        margin: 0 10px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .sidebar__open {
         position: fixed;
         top: 5vw;
@@ -605,7 +547,7 @@ img {
         right: -480px;
         padding: 200px 0 0 50px;
         /* background-color: #ff6748; */
-        background-image: url("img/barbg.png");
+        background-image: url("../img/barbg.png");
         background-repeat: no-repeat;
         background-position: right 0 top 0;
         background-size: cover;
@@ -692,7 +634,7 @@ img {
         width: 100%;
     }
     .landing__text {
-        background-image: url("img/p1.png");
+        background-image: url("../img/p1.png");
         background-position: left 0 top 14vw;
         height: 70vw;
     }
@@ -705,7 +647,7 @@ img {
         letter-spacing: 0.5rem;
     }
     .landing__words {
-        background-image: url("img/p1_words.png");
+        background-image: url("../img/p1_words.png");
         background-position: left 0 top 0;
         height: 50vw;
         top: 10vw;
@@ -761,7 +703,7 @@ img {
 
     /* reasons */
     .reasons__text {
-        background-image: url("img/reasonblue.png");
+        background-image: url("../img/reasonblue.png");
         background-repeat: no-repeat;
         background-position: left 0 top 0;
         background-size: contain;
@@ -783,19 +725,19 @@ img {
         margin: 5vw 0;
     }
     .reasons__item1 {
-        background-image: url("img/reason1.png");
+        background-image: url("../img/reason1.png");
     }
     .reasons__item2 {
-        background-image: url("img/reason2.png");
+        background-image: url("../img/reason2.png");
     }
     .reasons__item3 {
-        background-image: url("img/reason3.png");
+        background-image: url("../img/reason3.png");
     }
     .reasons__item4 {
-        background-image: url("img/reason4.png");
+        background-image: url("../img/reason4.png");
     }
     .reasons__item5 {
-        background-image: url("img/reason5.png");
+        background-image: url("../img/reason5.png");
     }
 
     .reasons__end {
@@ -870,7 +812,7 @@ img {
         height: 50vw;
     }
     .share__left {
-        background-image: url("img/p10.png");
+        background-image: url("../img/p10.png");
         background-repeat: no-repeat;
         background-position: left 0 top 0;
         background-size: contain;
@@ -902,7 +844,7 @@ img {
     }
     /* footer */
     .footer {
-        background-image: url("img/p11.png");
+        background-image: url("../img/p11.png");
         background-repeat: no-repeat;
         background-position: left 0 top 0;
         background-size: contain;
@@ -937,51 +879,10 @@ img {
     .footer__ig, .footer__email {
         width: 10%;
     }
-
-    .footer .marquee-wall{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
 }
 
 /***** Large Desktop *****/
 
 @media (min-width: 1920px) {
-    .marquee-wall{
-        display: flex;
-        width: 100vw;
-        height: 60px;
-        background-color: #ff6748;
-        color: #fff;
-        font-size:  30px;
-        line-height: 2.2;
-        overflow: hidden;
-    }
-    .marquee-wrapper{
-        display: flex;
-        animation: scroll 20s linear infinite;
-    }
-    .marquee-wrapper:nth-child(2){
-        animation: scroll2 20s linear infinite;
-        animation-delay: -10s;
-    }
-    .marquee{
-        width: 360px;
-        margin: 0 30px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-
-
-
-
-
 
 }
