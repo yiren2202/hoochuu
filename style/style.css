@@ -808,19 +808,19 @@ img {
         margin: 5vw 0;
     }
     .reasons__item1 {
-        background-image: url("../img/reason1zoom.png");
+        background-image: url("../img/reason1.png");
     }
     .reasons__item2 {
-        background-image: url("../img/reason2zoom.png");
+        background-image: url("../img/reason2.png");
     }
     .reasons__item3 {
-        background-image: url("../img/reason3zoom.png");
+        background-image: url("../img/reason3.png");
     }
     .reasons__item4 {
-        background-image: url("../img/reason4zoom.png");
+        background-image: url("../img/reason4.png");
     }
     .reasons__item5 {
-        background-image: url("../img/reason5zoom.png");
+        background-image: url("../img/reason5.png");
     }
 
     .reasons__end {
