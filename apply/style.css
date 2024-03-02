@@ -4,7 +4,7 @@ html, body {
     padding: 0;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: bold;
-    background-color: #80ddd0;
+    background-color: #FFFFFF;
     overflow-x: hidden;
 }
 #title h3, p{
@@ -33,22 +33,22 @@ a.nostyle:visited {
 .marquee-wall{
     display: flex;
     width: 100vw;
-    height: 30px;
+    height: 40px;
     background-color: #ff6748;
     color: #fff;
-    font-size:  15px;
+    font-size:  20px;
     line-height: 2.2;
     overflow: hidden;
 }
 .marquee-wall2{
     display: flex;
     position: absolute;
-    top: 153vw;
+    top: 130vw;
     width: 100vw;
-    height: 30px;
+    height: 40px;
     background-color: #ff6748;
     color: #fff;
-    font-size:  15px;
+    font-size:  20px;
     line-height: 2.2;
     overflow: hidden;
 }
@@ -79,8 +79,9 @@ a.nostyle:visited {
 .bg,#bgimg{
     display: block;
     position: absolute;
+    top: 50px;
     width: 100%;
-    height: 130vw;
+    height: 125vw;
     background-image: url("assets/BG.png");
     background-position: top center;
     background-size: 100%;
@@ -91,7 +92,7 @@ a.nostyle:visited {
     position: absolute;
     width: 35px;
     height: 35px;
-    top: 40px;
+    top: 14vw;
     right: 1vw;
     z-index: 5;
     background-color: transparent;
@@ -115,7 +116,7 @@ a.nostyle:visited {
     width: 100%;
     height: 20%;
     left: 0%;
-    top: 35vh;
+    top: 15vh;
 }
 
 .form-group {
@@ -301,6 +302,9 @@ a.nostyle:visited {
         left: 0%;
         top: 30vh;
     }
+    .back{
+        top: 20vw;
+    }
     .form-group label {
         min-width: 130px; /* 设置 label 的最小宽度 */
         margin-right: 50px; /* 设置右侧边距 */
@@ -310,7 +314,10 @@ a.nostyle:visited {
         margin-right: 1px !important;
     }
     .marquee-wall2{
-        top: 360vw;
+        height: 30px;
+        top: 340vw;
+        font-size:  15px;
+
     }
     .checkbox-item {
         display: inline-block; /* 将复选框项设置为行内块元素 */
@@ -340,8 +347,9 @@ a.nostyle:visited {
     .bg,#bgimg{
         display: block;
         position: absolute;
+        top: 10vw;
         width: 100%;
-        height: 360vw;
+        height: 335vw;
         background-image: url("assets/BG2.png");
         background-position: top center;
         background-size: 100%;
@@ -392,8 +400,17 @@ a.nostyle:visited {
         font-size: 30px !important;
         border-radius: 50px !important;
     }
+    .bg{
+        top: 5vw;
+    }
+    .marquee2{
+        width: 55vw;
+    }
     .marquee-wall2{
-        top: 140vw;
+        top: 130vw;
+        height: 60px;
+        font-size:  30px;
+        line-height: 2.2;
     }
     #last{
         top: 20vh;
