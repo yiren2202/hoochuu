@@ -70,9 +70,9 @@ img {
 }
 
 .progressbar {
-    background: url(../img/mobile/p1.png), linear-gradient(#ff6748, #50ec72);
+    background: url(../img/loading.png), radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,189,218,1) 54%, rgba(255,106,171,1) 95%, rgba(255,94,165,1) 100%);
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 50%;
     background-size: 20%, contain;
     position: fixed;
     top: 0;
@@ -549,8 +549,8 @@ img {
 .share__icon-text {
     padding: 10vw 0;
     font-weight: 500;
-    line-height: 2;
-    letter-spacing: 0.3rem;
+    line-height: 1.8;
+    letter-spacing: 0.2rem;
     text-align: center;
 }
 /* footer */
@@ -892,7 +892,7 @@ img {
         position: sticky;
         top: 0;
         padding: 15vw 5vw 0 10vw;
-        height: 50vw;
+        height: 90vw;
     }
     .share__left {
         background-image: url("../img/p10.png");
