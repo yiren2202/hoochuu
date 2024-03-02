@@ -294,7 +294,7 @@ img {
     padding: 5% 0 0 5%;
     font-size: 1.5rem;
 }
-.digit, .reasons__digit {
+.digit {
     opacity: 0;
     -webkit-transform: translateX(-40px);
          -moz-transform: translateX(-40px);
@@ -307,7 +307,23 @@ img {
              -o-transition: all 0.6s ease-out;
                     transition: all 0.6s ease-out;
 }
-.digit.visible, .reasons__digit.visible {
+.digit.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
+.reasons__digit {
+    opacity: 0;
+    -webkit-transition: all 0.6s ease-in-out;
+         -moz-transition: all 0.6s ease-in-out;
+            -ms-transition: all 0.6s ease-in-out;
+             -o-transition: all 0.6s ease-in-out;
+                    transition: all 0.6s ease-in-out;
+}
+.reasons__digit.visible {
     opacity: 1;
     -webkit-transform: none;
          -moz-transform: none;
