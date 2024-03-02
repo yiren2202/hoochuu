@@ -70,7 +70,7 @@ img {
 }
 
 .progressbar {
-    background: url(../img/loading.png), radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,189,218,1) 54%, rgba(255,106,171,1) 95%, rgba(255,94,165,1) 100%);
+    background: url(../img/loading.png), linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,231,213,1) 15%, rgba(255,192,145,1) 50%, rgba(255,227,207,1) 85%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 20%, contain;
