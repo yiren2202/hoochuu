@@ -225,6 +225,7 @@ a.nostyle:visited {
     background-color: white;
     font-weight: bold;
     font-size: 20px;
+    z-index: 7;
 }
 
 .popup{
@@ -277,7 +278,7 @@ a.nostyle:visited {
 #lottie1 {
     width: 20vw;
     position: absolute;
-    top: 150vh;
+    top: 140vh;
     left: 50vw;
     transform: translate(-50%);
     z-index: 6;
@@ -364,6 +365,14 @@ a.nostyle:visited {
     }
     .footer__link {
         margin: 20vw 0 5vw 0;
+    }
+    #lottie1 {
+        width: 40vw;
+        position: absolute;
+        top: 130vh;
+        left: 50vw;
+        transform: translate(-50%);
+        z-index: 6;
     }
 }
 
