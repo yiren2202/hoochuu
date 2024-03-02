@@ -141,7 +141,7 @@ img {
 
 .applybutton {
     position: fixed;
-    bottom: 3vw;
+    bottom: 9vw;
     left: 3vw;
     width: 25vw;
     z-index: 8;
@@ -584,7 +584,7 @@ img {
 
     .applybutton {
         position: fixed;
-        bottom: 3vw;
+        bottom: 4vw;
         left: 3vw;
         width: 10vw;
         z-index: 8;
