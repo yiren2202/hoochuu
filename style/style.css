@@ -65,7 +65,28 @@ img {
     to{transform: translateX(-200%)}
 }
 
-
+.progressbar {
+    background: linear-gradient(#ff6748, #50ec72);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+.progressbar__lottie {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20vw;
+}
+.progressbar__bar {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
 .sidebar__open {
     position: fixed;
     top: 10vw;
