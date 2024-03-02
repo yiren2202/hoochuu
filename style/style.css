@@ -313,7 +313,7 @@ img {
 }
 .reasons__item {
     position: sticky;
-    top: 5vw;
+    top: 30vw;
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
