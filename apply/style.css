@@ -85,7 +85,7 @@ a.nostyle:visited {
     width: 100%;
     background-image: url("assets/BG.png");
     background-position: center 10px;
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .back{
@@ -225,7 +225,7 @@ a.nostyle:visited {
     width: 20vw;
     top: 0vh;
     margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 10vh;
     left: 25vw;
     border: 0px solid #ccc; /* 添加边框样式 */
     border-radius: 20px; /* 添加圆角 */
@@ -298,7 +298,7 @@ a.nostyle:visited {
         position: relative;
         width: 90%;
         left: 5vw;
-        margin-top: 25vw;
+        margin-top: 20vh;
     }
     #last{
         display: block;
@@ -357,7 +357,7 @@ a.nostyle:visited {
         width: 100%;
         background-image: url("assets/BG2.png");
         background-position: center 10px;
-        background-size: 100%;
+        background-size: contain;
         background-repeat: no-repeat;
     }
     .popup{
