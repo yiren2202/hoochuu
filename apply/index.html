@@ -11,7 +11,8 @@
     <script src="scripts/axios.min.js"></script>
     <title>申請表單</title>
 </head>
-<body class="bg">
+
+<body>
     <div class="marquee-wall">
         <div class="marquee-wrapper first">
             <div class="marquee"><a href=""class="nostyle"><span>一鍵申請，獲得免費塑膠袋</span></a></div>
@@ -43,7 +44,8 @@
     </a>
     
     <!--div class="bg" id="bg"></div-->
-    <form id="data" class="data">
+    <form id="data" class="data bg">
+        <br><br><br><br><br><br><br><br><br><br><br>
         <div id="main" class="main">
             <div id="title">
                 <h3>填寫店家資料</h3>
@@ -150,6 +152,8 @@
                 <label for="address"></label>
                 <input type="address" id="address" name="address" placeholder="請填寫詳細地址(街道，巷弄，門號，樓層)" required>
             </div>
+
+            <br><br><br><br><br><br>
             <div id="last" class="last">
                 <div class="form-group">
                     <label for="bags">需要塑膠袋數量</label>
@@ -167,7 +171,9 @@
                         <option value="n">不同意</option>
                     </select>
                 </div>
+                <br><br><br>
                 <input class="submit" type="submit" value="填寫完成確認">
+                <br><br><br>
             </div>
         </div>
     </form>
