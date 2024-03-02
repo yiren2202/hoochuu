@@ -70,7 +70,10 @@ img {
 }
 
 .progressbar {
-    background: linear-gradient(#ff6748, #50ec72);
+    background: url(../img/mobile/p1.png), linear-gradient(#ff6748, #50ec72);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 20%, contain;
     position: fixed;
     top: 0;
     left: 0;
@@ -98,6 +101,38 @@ img {
     left: 50%;
     transform: translate(-50%);
 }
+/* HTML: <div class="loader"></div> */
+.loader {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 22px;
+    border-radius: 20px;
+    color: #514b82;
+    border: 2px solid;
+    position: relative;
+}
+.loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l6 10s;
+}
+.loader p{
+    position: relative;
+    top: 100%;
+    text-align: center;
+}
+@keyframes l6 {
+    100% {inset:0}
+}
+/* HTML: <div class="loader"></div> */
+
 .sidebar__open {
     position: fixed;
     top: 10vw;

@@ -1,25 +1,24 @@
 let progressbar =  document.getElementById("progressbar");
-let progressbar__lottie = document.getElementById("progressbar__lottie");
-// let progressbar__lottie__path = "../img/lottiefile/plastic_240302.json"
-let progressbar__lottie__path = "../img/lottiefile/plastic_240228_inline_fixed.json"
-let progressbar__lottie__animation;
-progressbar__lottie__animation = lottie.loadAnimation({
-  container: progressbar__lottie, // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: progressbar__lottie__path // the path to the animation json
-});
-progressbar__lottie__animation.addEventListener('data_ready', () => {
-  console.log('loading animation data has loaded');
-  // progressbar__lottie__animation.goToAndStop(228, true);
-  // progressbar__lottie__animation.playSegments([228,267], true);
-});
-progressbar__lottie__animation.addEventListener('loopComplete', () => {
-  console.log('loading animation complete');
-  progressbar.classList.add("fadeout");
-  progressbar__lottie__animation.destroy();
-});
+// let progressbar__lottie = document.getElementById("progressbar__lottie");
+// let progressbar__lottie__path = "../img/lottiefile/plastic_240228_inline_fixed.json"
+// let progressbar__lottie__animation;
+// progressbar__lottie__animation = lottie.loadAnimation({
+//   container: progressbar__lottie, // the dom element that will contain the animation
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: progressbar__lottie__path // the path to the animation json
+// });
+// progressbar__lottie__animation.addEventListener('data_ready', () => {
+//   console.log('loading animation data has loaded');
+//   // progressbar__lottie__animation.goToAndStop(228, true);
+//   // progressbar__lottie__animation.playSegments([228,267], true);
+// });
+// progressbar__lottie__animation.addEventListener('loopComplete', () => {
+//   console.log('loading animation complete');
+//   progressbar.classList.add("fadeout");
+//   progressbar__lottie__animation.destroy();
+// });
 progressbar.addEventListener('animationend',function(){
   console.log('CSS animation end');
   progressbar.style.display = "none";
