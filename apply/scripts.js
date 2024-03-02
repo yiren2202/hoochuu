@@ -11,11 +11,15 @@ window.onload = () => {
         container: lottie1, // the dom element that will contain the animation
         renderer: 'svg',
         loop: true,
-        autoplay: true,
+        autoplay: false,
         path: cutebag__img_path // the path to the animation json
       });
-      animation1.goToAndStop(228, true);
-      animation1.playSegments([228,267], false);
+      animation1.addEventListener('data_ready', () => {
+        console.log('animation data has loaded');
+        animation1.goToAndStop(228, true);
+        animation1.playSegments([228,267], true);
+      });
+      
 }
 
 // 获取复选框和文本输入框的引用
