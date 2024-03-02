@@ -17,8 +17,12 @@ progressbar__lottie__animation.addEventListener('data_ready', () => {
 });
 progressbar__lottie__animation.addEventListener('loopComplete', () => {
   console.log('loading animation complete');
-  progressbar.style.display = "none";
+  progressbar.classList.add("fadeout");
   progressbar__lottie__animation.destroy();
+});
+progressbar.addEventListener('animationend',function(){
+  console.log('CSS animation end');
+  progressbar.style.display = "none";
 });
 window.onload = () => {
   //do work

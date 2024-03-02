@@ -38,6 +38,10 @@ img {
 }
 
 /* CSS Animation */
+@keyframes fadeout{
+    0%{ opacity: 1; }
+    100%{ opacity: 0; }
+}
 @-moz-keyframes spin {
     0% { -moz-transform: rotate(-10deg); } 
     100% { -moz-transform: rotate(10deg); } 
@@ -74,6 +78,13 @@ img {
     height: 100vh;
     z-index: 100;
 }
+.progressbar.fadeout {
+    opacity: 0;
+    -webkit-animation:fadeout 1s linear normal ;
+    -moz-animation:fadeout 1s linear normal ;
+    animation:fadeout 1s linear normal ;
+}
+
 .progressbar__lottie {
     position: absolute;
     top: 10%;
