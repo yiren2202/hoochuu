@@ -73,7 +73,7 @@ img {
     background: url(../img/loading.png), radial-gradient(circle, rgba(255,104,72,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 20%, contain;
+    background-size: 40%, contain;
     position: fixed;
     top: 0;
     left: 0;
@@ -631,6 +631,9 @@ img {
 
 /***** Desktop *****/
 @media (min-width: 768px) {
+    .progressbar {
+        background-size: 20%, contain;
+    }
     .sidebar__open {
         position: fixed;
         top: 7vw;
