@@ -22,6 +22,9 @@ hr {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+#title p{
+    font-family: 'Galvji';
+}
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
@@ -102,7 +105,7 @@ a.nostyle:visited {
     position: absolute;
     width: 35px;
     height: 35px;
-    top: 5vw;
+    top: 60px;
     right: 2vw;
     z-index: 5;
     background-color: transparent;
@@ -306,6 +309,16 @@ a.nostyle:visited {
 }
 
 @media (max-width: 767px){
+    html, body {
+        font-size: 15px !important;
+    }
+    input {
+        font-size: 15px !important;
+    }
+    select{
+        font-size: 15px !important;
+        border-radius: 20px !important;
+    }
     .main{
         display: block;
         position: relative;
@@ -322,11 +335,13 @@ a.nostyle:visited {
         top: 0vh;
     }
     .back{
-        top: 20vw;
+        top: 45px;
+        width: 30px;
+        height: 30px;
     }
     .form-group label {
-        min-width: 95px; /* 设置 label 的最小宽度 */
-        max-width: 95px;
+        min-width: 80px; /* 设置 label 的最小宽度 */
+        max-width: 80px;
         margin-right: 3px; /* 设置右侧边距 */
     }
     .last label {
@@ -428,6 +443,9 @@ a.nostyle:visited {
     }
     .bg{
         top: 0vw;
+    }
+    .back{
+        top: 80px;
     }
     .marquee2{
         width: 55vw;
