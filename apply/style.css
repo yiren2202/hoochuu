@@ -241,7 +241,6 @@ a.nostyle:visited {
     width: 20vw;
     top: 0vh;
     margin-top: 5vw;
-    margin-bottom: 10vh;
     left: 25vw;
     border: 0px solid #ccc; /* 添加边框样式 */
     border-radius: 20px; /* 添加圆角 */
@@ -249,6 +248,7 @@ a.nostyle:visited {
     background-color: white;
     font-weight: bold;
     font-size: 20px;
+    color: black;
     z-index: 7;
 }
 
