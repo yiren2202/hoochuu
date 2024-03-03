@@ -393,8 +393,8 @@ img {
     
 }
 .reasons__title {
-    width: 60vw;
-    margin: 10vw 0 0 5vw;
+    width: 100%;
+    padding: 10vw 5vw 0 5vw;
 }
 .reasons__item {
     position: sticky;
@@ -438,7 +438,7 @@ img {
     width: 30vw;
 }
 .about__hoo-text {
-    margin: 2vw 0 2vw 0;
+    margin: 2vw 0 5vw 0;
     text-align: center;
     letter-spacing: 0.1rem;
 }
@@ -449,7 +449,7 @@ img {
 }
 .about__chuu-text {
     position: relative;
-    /* left: -10vw; */
+    margin: 5vw 0 0;
     text-align: center;
     letter-spacing: 0.1rem;
 }
@@ -547,7 +547,7 @@ img {
 .share__text {
     position: sticky;
     top: 0;
-    padding: 30vw 5vw 0 10vw;
+    padding: 50vw 5vw 0 10vw;
     height: 180vw;
 }
 .share__left {
@@ -912,8 +912,8 @@ img {
     }
     .past__title {
         background-image: url("../img/pasttitle.png");
-        width: 10vw;
-        height: 5vw;
+        width: 9vw;
+        height: 4vw;
     }
     .past__right {
         flex-grow: 1;
