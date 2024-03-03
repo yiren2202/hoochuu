@@ -281,6 +281,161 @@ document.getElementById('city').addEventListener('change', function() {
         addOption(citySelect, '大城鄉', '大城鄉');
         addOption(citySelect, '竹塘鄉', '竹塘鄉');
         addOption(citySelect, '溪州鄉', '溪州鄉');
+    } else if (country === '南投縣') {
+        addOption(citySelect, '南投市', '南投市');
+        addOption(citySelect, '埔里鎮', '埔里鎮');
+        addOption(citySelect, '草屯鎮', '草屯鎮');
+        addOption(citySelect, '竹山鎮', '竹山鎮');
+        addOption(citySelect, '集集鎮', '集集鎮');
+        addOption(citySelect, '名間鄉', '名間鄉');
+        addOption(citySelect, '鹿谷鄉', '鹿谷鄉');
+        addOption(citySelect, '中寮鄉', '中寮鄉');
+        addOption(citySelect, '魚池鄉', '魚池鄉');
+        addOption(citySelect, '國姓鄉', '國姓鄉');
+        addOption(citySelect, '水里鄉', '水里鄉');
+        addOption(citySelect, '信義鄉', '信義鄉');
+        addOption(citySelect, '仁愛鄉', '仁愛鄉');
+    } else if (country === '雲林縣') {
+        addOption(citySelect, '斗六市', '斗六市');
+        addOption(citySelect, '斗南鎮', '斗南鎮');
+        addOption(citySelect, '虎尾鎮', '虎尾鎮');
+        addOption(citySelect, '西螺鎮', '西螺鎮');
+        addOption(citySelect, '土庫鎮', '土庫鎮');
+        addOption(citySelect, '北港鎮', '北港鎮');
+        addOption(citySelect, '古坑鄉', '古坑鄉');
+        addOption(citySelect, '大埤鄉', '大埤鄉');
+        addOption(citySelect, '莿桐鄉', '莿桐鄉');
+        addOption(citySelect, '林內鄉', '林內鄉');
+        addOption(citySelect, '二崙鄉', '二崙鄉');
+        addOption(citySelect, '崙背鄉', '崙背鄉');
+        addOption(citySelect, '麥寮鄉', '麥寮鄉');
+        addOption(citySelect, '東勢鄉', '東勢鄉');
+        addOption(citySelect, '褒忠鄉', '褒忠鄉');
+        addOption(citySelect, '臺西鄉', '臺西鄉');
+        addOption(citySelect, '元長鄉', '元長鄉');
+        addOption(citySelect, '四湖鄉', '四湖鄉');
+        addOption(citySelect, '口湖鄉', '口湖鄉');
+        addOption(citySelect, '水林鄉', '水林鄉');
+    } else if (country === '嘉義縣') {
+        addOption(citySelect, '太保市', '太保市');
+        addOption(citySelect, '朴子市', '朴子市');
+        addOption(citySelect, '布袋鎮', '布袋鎮');
+        addOption(citySelect, '大林鎮', '大林鎮');
+        addOption(citySelect, '民雄鄉', '民雄鄉');
+        addOption(citySelect, '溪口鄉', '溪口鄉');
+        addOption(citySelect, '新港鄉', '新港鄉');
+        addOption(citySelect, '六腳鄉', '六腳鄉');
+        addOption(citySelect, '東石鄉', '東石鄉');
+        addOption(citySelect, '義竹鄉', '義竹鄉');
+        addOption(citySelect, '鹿草鄉', '鹿草鄉');
+        addOption(citySelect, '水上鄉', '水上鄉');
+        addOption(citySelect, '中埔鄉', '中埔鄉');
+        addOption(citySelect, '竹崎鄉', '竹崎鄉');
+        addOption(citySelect, '梅山鄉', '梅山鄉');
+        addOption(citySelect, '番路鄉', '番路鄉');
+        addOption(citySelect, '大埔鄉', '大埔鄉');
+        addOption(citySelect, '阿里山鄉', '阿里山鄉');
+    } else if (country === '屏東縣') {
+        addOption(citySelect, '屏東市', '屏東市');
+        addOption(citySelect, '潮州鎮', '潮州鎮');
+        addOption(citySelect, '東港鎮', '東港鎮');
+        addOption(citySelect, '恆春鎮', '恆春鎮');
+        addOption(citySelect, '萬丹鄉', '萬丹鄉');
+        addOption(citySelect, '長治鄉', '長治鄉');
+        addOption(citySelect, '麟洛鄉', '麟洛鄉');
+        addOption(citySelect, '九如鄉', '九如鄉');
+        addOption(citySelect, '里港鄉', '里港鄉');
+        addOption(citySelect, '鹽埔鄉', '鹽埔鄉');
+        addOption(citySelect, '高樹鄉', '高樹鄉');
+        addOption(citySelect, '萬巒鄉', '萬巒鄉');
+        addOption(citySelect, '內埔鄉', '內埔鄉');
+        addOption(citySelect, '竹田鄉', '竹田鄉');
+        addOption(citySelect, '新埤鄉', '新埤鄉');
+        addOption(citySelect, '枋寮鄉', '枋寮鄉');
+        addOption(citySelect, '新園鄉', '新園鄉');
+        addOption(citySelect, '崁頂鄉', '崁頂鄉');
+        addOption(citySelect, '林邊鄉', '林邊鄉');
+        addOption(citySelect, '南州鄉', '南州鄉');
+        addOption(citySelect, '佳冬鄉', '佳冬鄉');
+        addOption(citySelect, '琉球鄉', '琉球鄉');
+        addOption(citySelect, '車城鄉', '車城鄉');
+        addOption(citySelect, '滿洲鄉', '滿洲鄉');
+        addOption(citySelect, '枋山鄉', '枋山鄉');
+        addOption(citySelect, '三地門鄉', '三地門鄉');
+        addOption(citySelect, '霧臺鄉', '霧臺鄉');
+        addOption(citySelect, '瑪家鄉', '瑪家鄉');
+        addOption(citySelect, '泰武鄉', '泰武鄉');
+        addOption(citySelect, '來義鄉', '來義鄉');
+        addOption(citySelect, '春日鄉', '春日鄉');
+        addOption(citySelect, '獅子鄉', '獅子鄉');
+        addOption(citySelect, '牡丹鄉', '牡丹鄉');
+    } else if (country === '臺東縣') {
+        addOption(citySelect, '臺東市', '臺東市');
+        addOption(citySelect, '成功鎮', '成功鎮');
+        addOption(citySelect, '關山鎮', '關山鎮');
+        addOption(citySelect, '卑南鎮', '卑南鎮');
+        addOption(citySelect, '鹿野鄉', '鹿野鄉');
+        addOption(citySelect, '池上鄉', '池上鄉');
+        addOption(citySelect, '東河鄉', '東河鄉');
+        addOption(citySelect, '長濱鄉', '長濱鄉');
+        addOption(citySelect, '太麻里鄉', '太麻里鄉');
+        addOption(citySelect, '大武鄉', '大武鄉');
+        addOption(citySelect, '綠島鄉', '綠島鄉');
+        addOption(citySelect, '海端鄉', '海端鄉');
+        addOption(citySelect, '延平鄉', '延平鄉');
+        addOption(citySelect, '金峰鄉', '金峰鄉');
+        addOption(citySelect, '達仁鄉', '達仁鄉');
+        addOption(citySelect, '蘭嶼鄉', '蘭嶼鄉');
+    } else if (country === '花蓮縣') {
+        addOption(citySelect, '花蓮市', '花蓮市');
+        addOption(citySelect, '鳳林鎮', '鳳林鎮');
+        addOption(citySelect, '玉里鎮', '玉里鎮');
+        addOption(citySelect, '新城鄉', '新城鄉');
+        addOption(citySelect, '吉安鄉', '吉安鄉');
+        addOption(citySelect, '壽豐鄉', '壽豐鄉');
+        addOption(citySelect, '光復鄉', '光復鄉');
+        addOption(citySelect, '豐濱鄉', '豐濱鄉');
+        addOption(citySelect, '瑞穗鄉', '瑞穗鄉');
+        addOption(citySelect, '富里鄉', '富里鄉');
+        addOption(citySelect, '秀林鄉', '秀林鄉');
+        addOption(citySelect, '萬榮鄉', '萬榮鄉');
+        addOption(citySelect, '卓溪鄉', '卓溪鄉');
+    } else if (country === '澎湖縣') {
+        addOption(citySelect, '馬公市', '馬公市');
+        addOption(citySelect, '湖西鄉', '湖西鄉');
+        addOption(citySelect, '白紗鄉', '白紗鄉');
+        addOption(citySelect, '西嶼鄉', '西嶼鄉');
+        addOption(citySelect, '望安鄉', '望安鄉');
+        addOption(citySelect, '七美鄉', '七美鄉');
+    } else if (country === '基隆市') {
+        addOption(citySelect, '中正區', '中正區');
+        addOption(citySelect, '七堵區', '七堵區');
+        addOption(citySelect, '暖暖區', '暖暖區');
+        addOption(citySelect, '仁愛區', '仁愛區');
+        addOption(citySelect, '中山區', '中山區');
+        addOption(citySelect, '安樂區', '安樂區');
+        addOption(citySelect, '信義區', '信義區');
+    } else if (country === '新竹市') {
+        addOption(citySelect, '東區', '東區');
+        addOption(citySelect, '北區', '北區');
+        addOption(citySelect, '香山區', '香山區');
+    } else if (country === '嘉義市') {
+        addOption(citySelect, '東區', '東區');
+        addOption(citySelect, '西區', '西區');
+    } else if (country === '連江縣') {
+        addOption(citySelect, '南竿鄉', '南竿鄉');
+        addOption(citySelect, '北竿鄉', '北竿鄉');
+        addOption(citySelect, '莒光鄉', '莒光鄉');
+        addOption(citySelect, '東引鄉', '東引鄉');
+    } else if (country === '金門縣') {
+        addOption(citySelect, '金城鎮', '金城鎮');
+        addOption(citySelect, '金湖鎮', '金湖鎮');
+        addOption(citySelect, '金沙鎮', '金沙鎮');
+        addOption(citySelect, '金寧鄉', '金寧鄉');
+        addOption(citySelect, '烈嶼鄉', '烈嶼鄉');
+        addOption(citySelect, '烏坵鄉', '烏坵鄉');
+
+
     }
 });
 
