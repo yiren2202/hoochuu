@@ -227,12 +227,15 @@ a.nostyle:visited {
 
 #other-text{
     position: relative;
-    left: -5%;
+    left: 0%;
     flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
     width: 50%;
     border-radius: 10px; /* 设置输入框和文本域的圆角 */
     border: 1px solid #ccc; /* 设置边框样式 */
     padding: 8px; /* 设置内边距 */
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .submit{
@@ -299,7 +302,7 @@ a.nostyle:visited {
     font-family: 'Galvji';
 }
 
-#lottie1 {
+#lottieA {
     width: 20vw;
     position: absolute;
     bottom: 0;
@@ -415,7 +418,7 @@ a.nostyle:visited {
     .footer__link {
         margin: 20vw 0 5vw 0;
     }
-    #lottie1 {
+    #lottieA {
         width: 40vw;
         position: absolute;
         bottom: 30vw;
