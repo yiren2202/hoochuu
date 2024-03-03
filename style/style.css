@@ -110,7 +110,7 @@ img {
     width: 120px;
     height: 22px;
     border-radius: 20px;
-    color: #514b82;
+    color: #fff;
     border: 2px solid;
     position: relative;
 }
@@ -135,9 +135,9 @@ img {
 
 .sidebar__open {
     position: fixed;
-    top: 10vw;
-    right: 2vw;
-    width: 10vw;
+    top: 12vw;
+    right: 4vw;
+    width: 8vw;
     cursor: pointer;
     z-index: 11;
 }
@@ -262,7 +262,7 @@ img {
     position: relative;
     padding: 0;
     width: 100vw;
-    height: 180vw;
+    height: 150vw;
     writing-mode: vertical-rl
 }
 .landing__text_en {
@@ -279,10 +279,10 @@ img {
     background-position: left 0 top 0;
     background-size: contain;
     position: sticky;
-    top: 10vw;
+    top: 30vw;
     left: 0;
     width: 100vw;
-    height: 150vw;
+    height: 100vw;
 }
 /* steps */
 .steps__text {
@@ -290,11 +290,12 @@ img {
     padding: 0 0 0 5vw;
 }
 .steps__title {
-    margin: 5vw 0 60vw;
+    margin: 5vw 0 50vw;
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
 .steps__text_free {
+    font-weight: 600;
     color: #ff6748;
 }
 .steps__item {
@@ -392,7 +393,8 @@ img {
     
 }
 .reasons__title {
-    margin: 0 5vw;
+    width: 60vw;
+    margin: 10vw 0 0 5vw;
 }
 .reasons__item {
     position: sticky;
@@ -429,11 +431,11 @@ img {
 
 /* about */
 .about__text {
-    padding: 25vw 5vw 10vw 5vw;
+    padding: 10vw 5vw 10vw 5vw;
     width: 100vw;
 }
 .about__hoo {
-    width: 40vw;
+    width: 30vw;
 }
 .about__hoo-text {
     margin: 2vw 0 2vw 0;
@@ -443,13 +445,23 @@ img {
 .about__chuu {
     position: relative;
     left: 50vw;
-    width: 40vw;
+    width: 30vw;
 }
 .about__chuu-text {
     position: relative;
     /* left: -10vw; */
     text-align: center;
     letter-spacing: 0.1rem;
+}
+.about__chuu-text.right {
+    left: -5vw;
+    margin: 10vw 0 0;
+}
+.about__kiang {
+    position: relative;
+    top: 2vw;
+    left: 1vw;
+    width: 10vw;
 }
 /* past */
 .past__text {
@@ -484,13 +496,20 @@ img {
 
 .splide__arrow {
     background-color: transparent;
-    width: 2rem;
+    width: 3rem;
     top: 105%;
 }
+.splide__arrow--prev {
+    left: 5vw;
+}
+.splide__arrow--next {
+    right: 5vw;
+}
 .splide__pagination {
-    bottom: -1.5rem;
+    bottom: -2rem;
 }
 .splide__pagination__page {
+    margin: 8px;
     background: #50ec72;
 }
 .splide__pagination__page.is-active {
@@ -505,10 +524,13 @@ img {
 .splide__slide p {
     margin: 2vw;
 }
+.splide__slidetitle {
+    font-weight: 500;
+}
 .splide__slidenumber {
     position: absolute;
     bottom: 5px;
-    right: 15px;
+    right: 20px;
     color: #ff6748;
     font-size: 1.5rem;
 }
@@ -516,7 +538,7 @@ img {
 .share__text {
     position: sticky;
     top: 0;
-    padding: 15vw 5vw 0 10vw;
+    padding: 30vw 5vw 0 10vw;
     height: 120vw;
 }
 .share__left {
@@ -547,7 +569,7 @@ img {
 }
 .share__icon-text {
     padding: 10vw 0;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 1.8;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -559,7 +581,7 @@ img {
     background-position: left 0 top 0;
     background-size: contain;
     position: relative;
-    padding: 55vw 5vw 10vw 5vw;
+    padding: 90vw 5vw 10vw 5vw;
     width: 100vw;
     height: 185vw;
     z-index: 4;
@@ -602,9 +624,9 @@ img {
 @media (min-width: 768px) {
     .sidebar__open {
         position: fixed;
-        top: 5vw;
-        right: 2vw;
-        width: 5vw;
+        top: 7vw;
+        right: 4vw;
+        width: 4vw;
         cursor: pointer;
         z-index: 11;
     }
@@ -742,8 +764,8 @@ img {
     }
     .steps__title {
         margin: 0;
-        font-size: 1.2rem;
-        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
     }
     .steps__text_free {
         color: #ff6748;
@@ -761,7 +783,8 @@ img {
         float: right;
         width: 85%;
         padding: 2%;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
     }
     .steps__item.steps__item_two .steps__item_text {
         padding: 0 2%;
@@ -781,6 +804,8 @@ img {
         display: block;
         width:60%;
         font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
     }
 
     /* reasons */
@@ -831,7 +856,7 @@ img {
 
     /* about */
     .about__text {
-        padding: 25vw 5vw 10vw 50vw;
+        padding: 5vw 5vw 10vw 50vw;
         width: 100vw;
     }
     .about__hoo {
@@ -844,12 +869,17 @@ img {
     }
     .about__chuu {
         width: 15vw;
-        left: 0;
+        left: -5vw;
     }
     .about__chuu-text {
         position: relative;
         left: -10vw;
         text-align: left;
+    }
+    .about__kiang {
+        top: 2vw;
+        left: 1vw;
+        width: 7vw;
     }
     /* past */
     .past__text {
@@ -891,7 +921,7 @@ img {
         position: sticky;
         top: 0;
         padding: 15vw 5vw 0 10vw;
-        height: 90vw;
+        height: 70vw;
     }
     .share__left {
         background-image: url("../img/p10.png");
@@ -953,13 +983,16 @@ img {
     }
     .footer__text {
         margin: 17vw 0 0 5vw;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+        text-align: left;
     }
     .footer__link {
         margin: 5vw 0 0 5vw;
+        text-align: left;
     }
     .footer__ig, .footer__email {
         width: 10%;
+        margin: 0 4% 0 0;
     }
 }
 

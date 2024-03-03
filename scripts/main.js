@@ -190,19 +190,22 @@ animation1 = lottie.loadAnimation({
 animation1.addEventListener('data_ready', () => {
   console.log('main animation data has loaded');
 });
+
 let splide = new Splide( '.splide', {
   type   : 'loop',
   focus  : 'center',
   perPage: 3,
   height : '35vw',
+  fixedWidth: '25vw',
+  fixedHeight: '35vw',
   gap    : '5rem',
   padding: '5rem',
   breakpoints: {
     768: {
       perPage: 1,
-      height : '90vw',
-      gap    : '1rem',
-      
+      fixedWidth: '90vw',
+      fixedHeight : '110vw',
+      gap    : '5rem',
     },
   },
 });
