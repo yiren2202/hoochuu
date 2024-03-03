@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    font-size: 1.1rem;
+}
+body{
+    position: relative;
+    overflow-y: hidden;
+}
+hr {
+    border: none;
+    height: 1px; /* 控制线条的高度 */
+    background-color: black; /* 设置线条颜色为黑色 */
+}
+#title h3, p{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#title p{
+    font-family: 'Galvji';
+}
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+@keyframes scroll{
+    from{transform: translateX(100%)}
+    to{transform: translateX(-100%)}
+}
+@keyframes scroll2{
+    from{transform: translateX(0%)}
+    to{transform: translateX(-200%)}
+}
+.marquee-wall{
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    background-color: #ff6748;
+    color: #fff;
+    font-size:  20px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+.marquee-wall2{
+    display: flex;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    background-color: #ff6748;
+    color: #fff;
+    font-size:  20px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+.marquee-wrapper{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+.marquee-wrapper:nth-child(2){
+    animation: scroll2 20s linear infinite;
+    animation-delay: -10s;
+}
+.marquee{
+    width: 250px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marquee2{
+    width: 666px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    display: block;
+    position: relative;
+    top: 0vw;
+    width: 100vw;
+    height: 125vw;
+    background-image: url("assets/BG.png");
+    background-position: center 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back{
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 60px;
+    right: 2vw;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    background-image: url("assets/back.png");
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.data{
+    display: block;
+    position: relative;
+}
+.main{
+    display: block;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    margin-top: 15vw;
+}
+.last{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    left: 0%;
+    margin-top: 15vw;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 15px; /* 设置间距 */
+}
+
+/* 设置 label 的宽度 */
+.form-group label {
+    min-width: 155px; /* 设置 label 的最小宽度 */
+    margin-right: 20px; /* 设置右侧边距 */
+}
+
+.short{
+    margin-right: 1px !important;
+}
+
+/* 设置 input 的宽度 */
+.form-group input {
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    font-size: 1.1rem;
+    border-radius: 20px; /* 设置输入框和文本域的圆角 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+    padding-left: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+.form-group select {
+    /*-webkit-appearance: none;*/
+    border-radius: 50px !important;
+    border: 1px solid #ccc !important; /* 设置边框样式 */
+    padding: 8px !important; /* 设置内边距 */
+    padding-left: 1rem !important;
+    margin-right: 10px !important;
+    font-size: 1.1rem;
+}
+#bags {
+    /*-webkit-appearance: none;*/
+    flex: 1 !important; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px !important;
+    border: 1px solid #ccc !important; /* 设置边框样式 */
+    padding: 8px !important; /* 设置内边距 */
+    margin-right: 0px !important;
+}
+#agree_flag{
+    /*-webkit-appearance: none;*/
+    flex: 1 !important; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    border-radius: 20px !important;
+    border: 1px solid #ccc !important; /* 设置边框样式 */
+    padding: 8px !important; /* 设置内边距 */
+    margin-right: 0px !important;
+}
+#colortitle {
+    display: flex;
+    align-items: stretch; /* 垂直居中对齐 */
+}
+.checkbox-item {
+    display: inline-block; /* 将复选框项设置为行内块元素 */
+    width: calc(28%); /* 设置宽度为三分之一，并减去间距 */
+    margin-right: 2vw; /* 设置右侧间距 */
+    vertical-align: top; /* 使复选框项顶部对齐 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    padding-left: 1rem;
+    font-weight: normal;
+    background-color: white;
+    flex: 1;
+}
+
+.checkbox-item label {
+    margin-left: 0px;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+    color: #80DDD0; /* 将勾选的标签文本颜色设置为绿色 */
+}
+
+#other-item {
+    display: inline-block; /* 将复选框项设置为行内块元素 */
+    width: 50%; /* 设置宽度为三分之一，并减去间距 */
+    margin-right: 10vw; /* 设置右侧间距 */
+    vertical-align: top; /* 使复选框项顶部对齐 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    padding-left: 1rem;
+}
+
+#other-text{
+    position: relative;
+    left: -5%;
+    flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+    width: 50%;
+    border-radius: 10px; /* 设置输入框和文本域的圆角 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 8px; /* 设置内边距 */
+}
+
+.submit{
+    display: block;
+    position: relative;
+    width: 20vw;
+    top: 0vh;
+    margin-top: 5vw;
+    left: 25vw;
+    border: 0px solid #ccc; /* 添加边框样式 */
+    border-radius: 20px; /* 添加圆角 */
+    padding: 5px; /* 添加内边距 */
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    z-index: 7;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    float: right;
+    text-align: center;
+    width: 50%;
+    left: 25vw;
+    top: 10vw;
+}
+.popup2{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    float: right;
+    text-align: center;
+    width: 50%;
+    left: 25vw;
+    top: 10vw;
+}
+
+.square {
+    position: absolute; /* 设置绝对定位 */
+    z-index: -1;
+    top: 0; /* 顶部对齐 */
+    left: 0; /* 左侧对齐 */
+    width: 100%; /* 宽度占满父容器 */
+    height: 100%; /* 高度占满父容器 */
+    background-color: white; /* 方形的背景颜色 */
+    border-radius: 20px; /* 圆角半径，根据需要调整 */
+}
+.footer__text {
+    margin: 5vw 0 0 5vw;
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 2.5;
+}
+.footer__link {
+    margin: 5vw 0 5vw 0;
+}
+.footer__ig, .footer__email {
+    width: 10%;
+}
+.font__en {
+    font-family: 'Galvji';
+}
+
+#lottie1 {
+    width: 20vw;
+    position: absolute;
+    bottom: 0;
+    left: 70vw;
+    transform: translate(-50%);
+    z-index: 6;
+}
+
+@media (max-width: 767px){
+    html, body {
+        font-size: 15px !important;
+    }
+    input {
+        font-size: 15px !important;
+    }
+    select{
+        font-size: 15px !important;
+        border-radius: 20px !important;
+    }
+    .main{
+        display: block;
+        position: relative;
+        width: 90%;
+        left: 5vw;
+        margin-top: 20vh;
+    }
+    #last{
+        display: block;
+        position: relative;
+        width: 100%;
+
+        left: 0%;
+        top: 0vh;
+    }
+    .back{
+        top: 45px;
+        width: 30px;
+        height: 30px;
+    }
+    .form-group label {
+        min-width: 80px; /* 设置 label 的最小宽度 */
+        max-width: 80px;
+        margin-right: 3px; /* 设置右侧边距 */
+    }
+    .last label {
+        min-width: 155px; /* 设置 label 的最小宽度 */
+        max-width: none;
+        margin-right: 3px; /* 设置右侧边距 */
+    }
+    .short{
+        min-width: 1px !important;
+        margin-right: 1px !important;
+    }
+    .marquee-wall2{
+        height: 30px;
+        bottom: 0;
+        font-size:  15px;
+
+    }
+    .checkbox-item {
+        display: inline-block; /* 将复选框项设置为行内块元素 */
+        width: calc(20% - 1px); /* 设置宽度为三分之一，并减去间距 */
+        margin-right: 1px; /* 设置右侧间距 */
+        vertical-align: top; /* 使复选框项顶部对齐 */
+        border: 1px solid #ccc; /* 添加边框样式 */
+        border-radius: 20px; /* 添加圆角 */
+        padding: 5px; /* 添加内边距 */
+        padding-left: 1rem;
+        font-weight: normal;
+        background-color: white;
+    }
+    .submit{
+        display: block;
+        position: relative;
+        width: 200px;
+        top: 0vw;
+        left: 45vw;
+        transform: translateX(-100px);
+        border: 0px solid #ccc; /* 添加边框样式 */
+        border-radius: 20px; /* 添加圆角 */
+        padding: 5px; /* 添加内边距 */
+        background-color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .bg{
+        display: block;
+        position: relative;
+        top: 0vw;
+        width: 100vw;
+        height: 338vw;
+        background-image: url("assets/BG2.png");
+        background-position: center 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .popup{
+        width: 80%;
+        left: 10vw;
+        top: 25vw;
+    }
+    .popup2{
+        width: 80%;
+        left: 10vw;
+        top: 25vw;
+    }
+    .footer__text {
+        width: 80%;
+        margin: 5vw 0 0 8vw;
+        font-size: 1.2rem;
+        line-height: 2.5;
+    }
+    .footer__link {
+        margin: 20vw 0 5vw 0;
+    }
+    #lottie1 {
+        width: 40vw;
+        position: absolute;
+        bottom: 30vw;
+        left: 50vw;
+        transform: translate(-50%);
+        z-index: 6;
+    }
+}
+
+@media (min-width: 1920px){
+    html, body {
+        font-size: 30px !important;
+    }
+    input {
+        font-size: 30px !important;
+        border-radius: 50px !important;
+    }
+    input[type="checkbox" i] {
+        transform: scale(2);
+        margin-right: 10px;
+    }
+    select{
+        font-size: 30px !important;
+        border-radius: 50px !important;
+    }
+    .bg{
+        top: 0vw;
+    }
+    .back{
+        top: 80px;
+    }
+    .marquee2{
+        width: 55vw;
+    }
+    .marquee-wall2{
+        height: 60px;
+        font-size:  30px;
+        line-height: 2.2;
+    }
+    #last{
+        top: 0vh;
+    }
+    #bags {
+        border-radius: 50px !important;
+        margin-right: 0px !important;
+    }
+    #agree_flag{
+        border-radius: 50px !important;
+    }
+    .checkbox-item {
+        border-radius: 50px !important; /* 添加圆角 */
+    }
+    .form-group label {
+        min-width: 250px; /* 设置 label 的最小宽度 */
+        max-width: 250px;
+        margin-right: 50px; /* 设置右侧边距 */
+    }
+}
