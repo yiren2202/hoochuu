@@ -94,6 +94,12 @@ sidebar__open.addEventListener("click", function() {
 sidebar__close.addEventListener("click", function() {
   sidebar.style.right = "-480px";
 });
+let siderbarLinks = document.getElementsByClassName("sidebar-anchor");
+for (var i=0; i<siderbarLinks.length; i++) { // create a scene for each element
+  siderbarLinks[i].addEventListener("click", function() {
+    sidebar.style.right = "-480px";
+  });
+}
 
 // build scenes
 let revealElements = document.getElementsByClassName("digit");
