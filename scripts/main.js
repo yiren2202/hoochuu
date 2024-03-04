@@ -34,10 +34,12 @@ applysection.style.display = "none";
 function showApply() {
   mainpage.style.display = "none";
   applysection.style.display = "block";
+  window.scrollTo(0, 0);
 }
 function showMain() {
   applysection.style.display = "none";
   mainpage.style.display = "block";
+  window.scrollTo(0, 0);
 }
 window.onload = () => {
   //do work
