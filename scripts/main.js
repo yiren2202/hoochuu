@@ -23,8 +23,23 @@ progressbar.addEventListener('animationend',function(){
   console.log('CSS animation end');
   progressbar.style.display = "none";
 });
+
+
+let mainpage = document.getElementById("mainpage");
+let applysection = document.getElementById("apply");
+applysection.style.display = "none";
+
+function showApply() {
+  mainpage.style.display = "none";
+  applysection.style.display = "block";
+}
+function showMain() {
+  applysection.style.display = "none";
+  mainpage.style.display = "block";
+}
 window.onload = () => {
   //do work
+
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let innerW = window.innerWidth;
@@ -50,6 +65,7 @@ let sidebar = document.getElementById("sidebar");
 
 // init controller
 let SMcontroller = new ScrollMagic.Controller();
+
 
 
 // Map function to convert the range
@@ -104,6 +120,7 @@ let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", dur
   .triggerHook(0)
   .setPin("#share__text", {pushFollowers: false})
   .addTo(SMcontroller);
+
 
 function doSomething(scrollPos) {
   // 依據捲動位置進行某些操作

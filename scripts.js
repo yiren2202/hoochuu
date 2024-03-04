@@ -1,26 +1,26 @@
-window.onload = () => {
+// window.onload = () => {
     // Lottie Animation
-    let cutebag__img_path = "../img/lottiefile/plastic_240228_inline_fixed.json";
+    let cutebag__img_path = "../img/lottiefile/plastic_240302-2.json";
     let cutebag__img_index = 1;
     let cutebag__img_start = 1;
     let cutebag__img_end = 279;
-    let lottie1 = document.getElementById("lottie1");
-    let animation1;
+    let lottieA = document.getElementById("lottieA");
+    let animationA;
 
-    animation1 = lottie.loadAnimation({
-        container: lottie1, // the dom element that will contain the animation
+    animationA = lottie.loadAnimation({
+        container: lottieA, // the dom element that will contain the animation
         renderer: 'svg',
         loop: true,
-        autoplay: false,
+        autoplay: true,
         path: cutebag__img_path // the path to the animation json
       });
-      animation1.addEventListener('data_ready', () => {
-        console.log('animation data has loaded');
-        animation1.goToAndStop(228, true);
-        animation1.playSegments([228,267], true);
+      animationA.addEventListener('data_ready', () => {
+        console.log('form animation data has loaded');
+        animationA.goToAndStop(228, true);
+        animationA.playSegments([228,267], true);
       });
       
-}
+// }
 
 // 获取复选框和文本输入框的引用
 const otherCheckbox = document.getElementById('other');
