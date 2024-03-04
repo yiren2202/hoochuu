@@ -1,3 +1,4 @@
+let isloaded = false;
 let progressbar =  document.getElementById("progressbar");
 // let progressbar__lottie = document.getElementById("progressbar__lottie");
 // let progressbar__lottie__path = "../img/lottiefile/plastic_240228_inline_fixed.json"
@@ -21,7 +22,8 @@ let progressbar =  document.getElementById("progressbar");
 // });
 progressbar.addEventListener('animationend',function(){
   console.log('CSS animation end');
-  progressbar.style.display = "none";
+  if(isloaded) progressbar.style.display = "none";
+  else isloaded = true;
 });
 
 
@@ -206,6 +208,8 @@ animation1 = lottie.loadAnimation({
 });
 animation1.addEventListener('data_ready', () => {
   console.log('main animation data has loaded');
+  if(isloaded) progressbar.style.display = "none";
+  else isloaded = true;
 });
 
 let splide = new Splide( '.splide', {
