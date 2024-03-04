@@ -259,6 +259,9 @@ a.nostyle:visited {
     z-index: 7;
 }
 
+.popup, .popup2 {
+    padding: 5vw;
+}
 .popup{
     display: none;
     position: fixed;
@@ -279,7 +282,18 @@ a.nostyle:visited {
     left: 25vw;
     top: 10vw;
 }
-
+.popup .back, .popup2 .back {
+    top: 10px;
+    right: 10px;
+}
+.popup .footer__text, .popup2 .footer__text {
+    margin: 5vw 0 0 0;
+    text-align: center;
+}
+.popup .footer__link, .popup2 .footer__link {
+    margin: 5vw 0 0 0;
+    text-align: center;
+}
 .square {
     position: absolute; /* 设置绝对定位 */
     z-index: -1;

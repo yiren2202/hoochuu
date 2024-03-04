@@ -21,7 +21,16 @@
       });
       
 // }
-
+let popup = document.getElementById("popup");
+let popup2 = document.getElementById("popup2");
+let popupback = document.getElementById("popupback");
+let popup2back = document.getElementById("popup2back");
+popupback.addEventListener("click", function() {
+    popup.style.display = "none";
+});
+popup2back.addEventListener("click", function() {
+    popup2.style.display = "none";
+});
 // 获取复选框和文本输入框的引用
 const otherCheckbox = document.getElementById('other');
 const otherTextInput = document.getElementById('other-text');
@@ -484,8 +493,10 @@ document.getElementById('data').addEventListener('submit', function(event) {
     })
     .then(function (response) {
         console.log(response);
+        popup2.style.display = 'block';
     })
     .catch(function (error) {
         console.log(error);
+        popup.style.display = 'block';
     });
 });
