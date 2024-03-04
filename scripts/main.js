@@ -49,7 +49,7 @@ let innerH = window.innerHeight;
 let cutebag__img_path = "../img/lottiefile/plastic_240302-2.json";
 let cutebag__img_index = 1;
 let cutebag__img_start = 1;
-let cutebag__img_end = 279;
+let cutebag__img_end = 275;
 let scrollPos__temp;
 let lottie1 = document.getElementById("lottie1");
 let animation1;
@@ -144,9 +144,13 @@ function doSomething(scrollPos) {
     {
       bagtop = innerH*0.25 - innerH*0.37*(scrollPos/scrollPos__check1) ;
     }
-    else
+    else if(scrollPos<=scrollPos__check5)
     {
       bagtop = innerH*-0.12;
+    }
+    else
+    {
+      bagtop = innerH*-0.12 + innerH*0.35*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
     }
   }
   else if(innerW >= 768) {

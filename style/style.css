@@ -944,8 +944,8 @@ img {
     .share__text {
         position: sticky;
         top: 0;
-        padding: 15vw 5vw 0 10vw;
-        height: 70vw;
+        padding: 10vw 5vw 0 10vw;
+        height: 40vw;
     }
     .share__left {
         background-image: url("../img/p10.png");
