@@ -532,6 +532,7 @@ img {
 }
 .splide__slide p {
     margin: 2vw;
+    font-size: 1rem;
 }
 .splide__slidetitle {
     font-weight: 500;
@@ -578,6 +579,7 @@ img {
 }
 .share__icon-text {
     padding: 10vw 0;
+    font-size: 1rem;
     /* font-weight: 500; */
     line-height: 1.8;
     letter-spacing: 0.2rem;
@@ -614,6 +616,7 @@ img {
 
 .footer__text {
     margin: 10vw 0 0 0;
+    width: 100%;
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 2;
