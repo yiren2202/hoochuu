@@ -21,16 +21,27 @@
       });
       
 // }
-let popup = document.getElementById("popup");
+let popup1 = document.getElementById("popup1");
 let popup2 = document.getElementById("popup2");
-let popupback = document.getElementById("popupback");
+let popup3 = document.getElementById("popup3");
+let popup4 = document.getElementById("popup4");
+let popup1back = document.getElementById("popup1back");
 let popup2back = document.getElementById("popup2back");
-popupback.addEventListener("click", function() {
-    popup.style.display = "none";
+let popup3back = document.getElementById("popup3back");
+let popup4back = document.getElementById("popup4back");
+popup1back.addEventListener("click", function() {
+    popup1.style.display = "none";
 });
 popup2back.addEventListener("click", function() {
     popup2.style.display = "none";
 });
+popup3back.addEventListener("click", function() {
+    popup3.style.display = "none";
+});
+popup4back.addEventListener("click", function() {
+    popup4.style.display = "none";
+});
+
 // 获取复选框和文本输入框的引用
 const otherCheckbox = document.getElementById('other');
 const otherTextInput = document.getElementById('other-text');
@@ -493,10 +504,27 @@ document.getElementById('data').addEventListener('submit', function(event) {
     })
     .then(function (response) {
         console.log(response);
-        popup2.style.display = 'block';
+        popup1.style.display = 'block';
     })
     .catch(function (error) {
         console.log(error);
-        popup.style.display = 'block';
+        switch(error.code) {
+            case 4000:
+                popup2.style.display = 'block';
+                break;
+
+            case 4100:
+                popup3.style.display = 'block';
+                break;
+
+            case 500:
+                popup4.style.display = 'block';
+                break;
+                
+            default:
+                popup4.style.display = 'block';
+                break;
+        }
+        
     });
 });

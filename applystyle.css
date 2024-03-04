@@ -259,9 +259,6 @@ a.nostyle:visited {
     z-index: 7;
 }
 
-.popup, .popup2 {
-    padding: 5vw;
-}
 .popup{
     display: none;
     position: fixed;
@@ -271,26 +268,18 @@ a.nostyle:visited {
     width: 50%;
     left: 25vw;
     top: 10vw;
+    padding: 5vw;
 }
-.popup2{
-    display: none;
-    position: fixed;
-    z-index: 10;
-    float: right;
-    text-align: center;
-    width: 50%;
-    left: 25vw;
-    top: 10vw;
-}
-.popup .back, .popup2 .back {
+
+.popup .back {
     top: 10px;
     right: 10px;
 }
-.popup .footer__text, .popup2 .footer__text {
+.popup .footer__text {
     margin: 5vw 0 0 0;
     text-align: center;
 }
-.popup .footer__link, .popup2 .footer__link {
+.popup .footer__link {
     margin: 5vw 0 0 0;
     text-align: center;
 }
@@ -418,11 +407,6 @@ a.nostyle:visited {
         background-repeat: no-repeat;
     }
     .popup{
-        width: 80%;
-        left: 10vw;
-        top: 25vw;
-    }
-    .popup2{
         width: 80%;
         left: 10vw;
         top: 25vw;
