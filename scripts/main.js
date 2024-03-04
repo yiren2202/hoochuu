@@ -154,32 +154,38 @@ function doSomething(scrollPos) {
     }
   }
   else if(innerW >= 768) {
-    bagtop = innerH*-0.16;
+    bagtop = innerH*-0.15;
     bagleft = innerW*0.5;
 
     if(scrollPos <= scrollPos__check1)
     {
+      bagtop = innerH*-0.15;
       bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1);
     }
     else if(scrollPos <= scrollPos__check2)
     {
+      bagtop = innerH*-0.15 - innerH*0.05*((scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1)) ;
       bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
       // console.log(bagleft);
     }
     else if(scrollPos <= scrollPos__check3)
     {
+      bagtop = innerH*-0.2;
       bagleft = innerW*0.5;
     }
     else if(scrollPos <= scrollPos__check4)
     {
+      bagtop = innerH*-0.2;
       bagleft = innerW*0.5 - innerW*0.4*( (scrollPos-scrollPos__check3)/(scrollPos__check4-scrollPos__check3) ) ;
     }
     else if(scrollPos <= scrollPos__check5)
     {
+      bagtop = innerH*-0.2;
       bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
     }
     else
     {
+      bagtop = innerH*-0.2;
       bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
     }
   }
