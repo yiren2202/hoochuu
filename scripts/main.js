@@ -86,7 +86,7 @@ window.addEventListener("resize", function() {
   doSomething(lastKnownScrollPosition);
 });
 lottie1.addEventListener("click", function() {
-  window.location = "/apply";
+  showApply();
 });
 sidebar__open.addEventListener("click", function() {
   sidebar.style.right = 0;
