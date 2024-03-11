@@ -72,7 +72,7 @@ img {
 .progressbar {
     background: url(../img/loading.png), radial-gradient(circle, rgba(255,104,72,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 35%;
     background-size: 40%, contain;
     position: fixed;
     top: 0;
@@ -101,6 +101,15 @@ img {
     left: 50%;
     transform: translate(-50%);
 }
+.progressbar__text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
 /* HTML: <div class="loader"></div> */
 .loader {
     position: absolute;
@@ -122,6 +131,7 @@ img {
     border-radius: inherit;
     background: currentColor;
     animation: l6 10s;
+    animation-fill-mode: both;
 }
 .loader p{
     position: relative;
@@ -534,8 +544,12 @@ img {
     margin: 2vw;
     font-size: 1rem;
 }
-.splide__slidetitle {
-    font-weight: 500;
+.splide__slide .splide__slidetitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.splide__slide.is-active .splide__slidetitle {
+    color: #ff6748;
 }
 .splide__slidenumber {
     position: absolute;

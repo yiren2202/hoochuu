@@ -152,7 +152,7 @@ function doSomething(scrollPos) {
     }
     else
     {
-      bagtop = innerH*-0.12 + innerH*0.35*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
+      bagtop = innerH*-0.12 + innerH*0.2*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
     }
   }
   else if(innerW >= 768) {
