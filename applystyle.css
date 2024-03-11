@@ -98,7 +98,7 @@ a.nostyle:visited {
     position: relative;
     top: 0vw;
     width: 100vw;
-    height: 125vw;
+    height: 140vw;
     background-image: url("assets/BG.png");
     background-position: center 40px;
     background-size: contain;
@@ -143,7 +143,7 @@ a.nostyle:visited {
 .form-group {
     display: flex;
     align-items: center; /* 垂直居中对齐 */
-    margin-bottom: 15px; /* 设置间距 */
+    margin-bottom: 10px; /* 设置间距 */
 }
 
 /* 设置 label 的宽度 */
@@ -175,6 +175,32 @@ a.nostyle:visited {
     padding-left: 1rem !important;
     margin-right: 10px !important;
     font-size: 1.1rem;
+}
+.checkboxdisplay{
+    appearance: none;
+    border: none !important;
+    padding: 0px !important;
+}
+
+.storenameinput{
+    max-width: 30vw;
+}
+.nameinput{
+    max-width: 15vw;
+}
+.phoneinput{
+    max-width: 15vw;
+}
+.emailinput{
+    max-width: 30vw;
+}
+.cityinput{
+    max-width: 15vw;
+    min-width: 15vw;
+}
+.countyinput{
+    max-width: 15vw;
+    min-width: 15vw;
 }
 #bags {
     /*-webkit-appearance: none;*/
@@ -236,7 +262,7 @@ a.nostyle:visited {
     width: 50%;
     border-radius: 10px; /* 设置输入框和文本域的圆角 */
     border: 1px solid #ccc; /* 设置边框样式 */
-    padding: 8px; /* 设置内边距 */
+    padding:0px; /* 设置内边距 */
     border: none;
     padding-top: 0;
     padding-bottom: 0;
@@ -329,12 +355,42 @@ a.nostyle:visited {
         font-size: 15px !important;
         border-radius: 20px !important;
     }
+    .form-group input {
+        flex: 1; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
+        font-size: 1.1rem;
+        border-radius: 20px; /* 设置输入框和文本域的圆角 */
+        border: 1px solid #ccc; /* 设置边框样式 */
+        padding: 8px; /* 设置内边距 */
+        padding-left: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
     .main{
         display: block;
         position: relative;
         width: 90%;
         left: 5vw;
         margin-top: 20vh;
+    }
+    .storenameinput{
+        max-width: 50vw;
+    }
+    .nameinput{
+        max-width: 40vw;
+    }
+    .phoneinput{
+        max-width: 40vw;
+    }
+    .emailinput{
+        max-width: 80vw;
+    }
+    .cityinput{
+        max-width: 25vw;
+        min-width: 25vw;
+    }
+    .countyinput{
+        max-width: 25vw;
+        min-width: 25vw;
     }
     #last{
         display: block;

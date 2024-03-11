@@ -346,81 +346,81 @@
                 </div>
                 <div class="form-group">
                     <label for="name">店家名稱</label>
-                    <input type="text" id="name" name="store_name" placeholder="請填寫 ex.好初早餐店" required>
+                    <input type="text" id="name" class="storenameinput" name="store_name" placeholder="請填寫 ex.好初早餐店" required>
                 </div>
-
+                <br>
                 <div class="form-group">
                     <label for="products" id="products">店家主要販賣內容</label>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="breakfast" name="product" value="breakfast">
+                        <input type="checkbox" id="breakfast" name="product" value="breakfast" class="checkboxdisplay">
                         <label for="breakfast" class="short">早餐</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="boxlunch" name="product" value="boxlunch">
+                        <input type="checkbox" id="boxlunch" name="product" value="boxlunch" class="checkboxdisplay">
                         <label for="boxlunch" class="short">便當</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="coffee" name="product" value="coffee">
+                        <input type="checkbox" id="coffee" name="product" value="coffee" class="checkboxdisplay">
                         <label for="coffee" class="short">咖啡</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="products"></label>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="drink" name="product" value="drink">
+                        <input type="checkbox" id="drink" name="product" value="drink" class="checkboxdisplay">
                         <label for="drink" class="short">飲料</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="cloth" name="product" value="cloth">
+                        <input type="checkbox" id="cloth" name="product" value="cloth" class="checkboxdisplay">
                         <label for="cloth" class="short">服飾</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="gift" name="product" value="gift">
+                        <input type="checkbox" id="gift" name="product" value="gift" class="checkboxdisplay">
                         <label for="gift" class="short">小物</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="products"></label>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="delicious" name="product" value="delicious">
+                        <input type="checkbox" id="delicious" name="product" value="delicious" class="checkboxdisplay">
                         <label for="delicious" class="short">好吃</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="stationery" name="product" value="stationery">
+                        <input type="checkbox" id="stationery" name="product" value="stationery" class="checkboxdisplay">
                         <label for="stationery" class="short">文具</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="book" name="product" value="book">
+                        <input type="checkbox" id="book" name="product" value="book" class="checkboxdisplay">
                         <label for="book" class="short">書籍</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="products"></label>
                     <div class="checkbox-item" id="other-item">
-                        <input type="checkbox" id="other" name="product" value="other">
+                        <input type="checkbox" id="other" name="product" value="other" class="checkboxdisplay">
                         <label for="other">其他:</label>
                         <input type="text" id="other-text" placeholder="請填寫" style="display: none;">
                     </div>
                 </div>
-
+                <br>
                 <div class="form-group">
                     <label for="name">聯絡人</label>
-                    <input type="name" id="name" name="name" placeholder="王好初" required>
+                    <input type="name" id="name" class="nameinput" name="name" placeholder="王好初" required>
                 </div>
-
+                <br>
                 <div class="form-group">
                     <label for="phone">聯絡電話</label>
-                    <input type="phone" id="phone" name="phone" placeholder="(00)1234-5678" required>
+                    <input type="phone" id="phone" class="phoneinput" name="phone" placeholder="(00)1234-5678" required>
                 </div>
-
+                <br>
                 <div class="form-group">
                     <label for="email">聯絡信箱</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    <input type="email" id="email" class="emailinput" name="email" placeholder="example@example.com" required>
                 </div>
-
+                <br>
                 <div class="form-group">
                     <label for="city">店家地址</label>
-                    <select id="city" name="city">
+                    <select id="city" class="cityinput" name="city">
                         <option value="">請選擇地區</option>
                         <option value="臺北市">臺北市</option>
                         <option value="新北市">新北市</option>
@@ -445,7 +445,7 @@
                         <option value="連江縣">連江縣</option>
                         <option value="金門縣">金門縣</option>
                     </select>
-                    <select id="county" name="county">
+                    <select id="county" class="countyinput" name="county">
                         <option value="">區</option>
                         <!-- 这里将根据第一个下拉菜单的选择动态更新 -->
                     </select>
@@ -467,11 +467,10 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="agree_flag">同意好出漫報前往拍照，作為宣傳素材使用</label>
+                        <label for="agree_flag">同意好初漫報前往拍照，作為宣傳素材使用</label>
                         <select id="agree_flag" name="agree_flag" class="agree_flag">
                             <option value=""></option>
                             <option value="y">同意</option>
-                            <option value="n">不同意</option>
                         </select>
                     </div>
                     <br>
