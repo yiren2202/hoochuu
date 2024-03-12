@@ -305,6 +305,7 @@ a.nostyle:visited {
 .popup .footer__text {
     margin: 5vw 0 0 0;
     text-align: center;
+    letter-spacing: 0.1rem;
 }
 .popup .footer__link {
     margin: 5vw 0 0 0;
