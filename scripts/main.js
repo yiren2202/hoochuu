@@ -54,6 +54,7 @@ let cutebag__img_start = 1;
 let cutebag__img_end = 275;
 let scrollPos__temp;
 let lottie1 = document.getElementById("lottie1");
+let lottie1HasShowed = false;
 let animation1;
 let scrollPos__check1 = document.getElementById("steps__text").offsetTop-400;
 let scrollPos__check2 = document.getElementById("reasons__text").offsetTop-400;
@@ -123,6 +124,7 @@ for (var i=0; i<revealElements2.length; i++) { // create a scene for each elemen
             triggerHook: 0.2,
           })
           .setClassToggle(revealElements2[i], "visible") // add class toggle
+          .duration(400)
           .addTo(SMcontroller);
 }
 
@@ -146,6 +148,14 @@ function doSomething(scrollPos) {
     {
       bagtop = innerH*0.25 - innerH*0.37*(scrollPos/scrollPos__check1) ;
     }
+    else if(scrollPos<=scrollPos__check2)
+    {
+      if(!lottie1HasShowed) {
+        lottie1.classList.add("fadein");
+        lottie1HasShowed = true;
+      }
+      bagtop = innerH*-0.12;
+    }
     else if(scrollPos<=scrollPos__check5)
     {
       bagtop = innerH*-0.12;
@@ -161,11 +171,21 @@ function doSomething(scrollPos) {
 
     if(scrollPos <= scrollPos__check1)
     {
+      if(lottie1HasShowed) {
+        lottie1.classList.remove("fadein");
+        lottie1.classList.add("fadeout");
+        lottie1HasShowed = false;
+      }
       bagtop = innerH*-0.15;
       bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1);
     }
     else if(scrollPos <= scrollPos__check2)
     {
+      if(!lottie1HasShowed) {
+        lottie1.classList.remove("fadeout");
+        lottie1.classList.add("fadein");
+        lottie1HasShowed = true;
+      }
       bagtop = innerH*-0.15 - innerH*0.05*((scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1)) ;
       bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
       // console.log(bagleft);
