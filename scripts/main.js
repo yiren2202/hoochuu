@@ -146,11 +146,17 @@ function doSomething(scrollPos) {
 
     if(scrollPos <= scrollPos__check1)
     {
+      if(lottie1HasShowed) {
+        lottie1.classList.remove("fadein");
+        lottie1.classList.add("fadeout");
+        lottie1HasShowed = false;
+      }
       bagtop = innerH*0.25 - innerH*0.37*(scrollPos/scrollPos__check1) ;
     }
     else if(scrollPos<=scrollPos__check2)
     {
       if(!lottie1HasShowed) {
+        lottie1.classList.remove("fadeout");
         lottie1.classList.add("fadein");
         lottie1HasShowed = true;
       }

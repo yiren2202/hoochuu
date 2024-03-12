@@ -249,9 +249,9 @@ img {
 }
 #lottie1.fadeout {
     opacity: 0;
-    -webkit-animation:fadeout 1s linear normal ;
-    -moz-animation:fadeout 1s linear normal ;
-    animation:fadeout 1s linear normal ;
+    -webkit-animation:fadeout 0.1s linear normal ;
+    -moz-animation:fadeout 0.1s linear normal ;
+    animation:fadeout 0.1s linear normal ;
 }
 
 .cutebag{
