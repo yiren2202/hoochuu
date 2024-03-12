@@ -169,6 +169,7 @@ a.nostyle:visited {
 }
 .form-group select {
     /*-webkit-appearance: none;*/
+    appearance: none;
     border-radius: 50px !important;
     border: 1px solid #ccc !important; /* 设置边框样式 */
     padding: 8px !important; /* 设置内边距 */
@@ -189,7 +190,7 @@ a.nostyle:visited {
     max-width: 15vw;
 }
 .phoneinput{
-    max-width: 15vw;
+    max-width: 20vw;
 }
 .emailinput{
     max-width: 30vw;
