@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@font-face {
+    font-family: "Galvji";
+    src:
+      url("../fonts/Galvji.ttc") format("ttc");
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -99,7 +105,7 @@ a.nostyle:visited {
     top: 0vw;
     width: 100vw;
     height: 140vw;
-    background-image: url("assets/BG.png");
+    background-image: url("../assets/BG.png");
     background-position: center 40px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -114,7 +120,7 @@ a.nostyle:visited {
     z-index: 5;
     background-color: transparent;
     border: none;
-    background-image: url("assets/back.png");
+    background-image: url("../assets/back.png");
     background-position: top center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -459,7 +465,7 @@ a.nostyle:visited {
         top: 0vw;
         width: 100vw;
         height: 338vw;
-        background-image: url("assets/BG2.png");
+        background-image: url("../assets/BG2.png");
         background-position: center 30px;
         background-size: contain;
         background-repeat: no-repeat;
