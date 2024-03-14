@@ -1,6 +1,6 @@
 // window.onload = () => {
     // Lottie Animation
-    let cutebag__img_path = "../img/lottiefile/plastic_240302-2.json";
+    let cutebag__img_path = "../img/lottiefile/plastic_240302new.json";
     let cutebag__img_index = 1;
     let cutebag__img_start = 1;
     let cutebag__img_end = 279;
