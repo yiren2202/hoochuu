@@ -1113,11 +1113,12 @@ img {
     }
     .footer__text {
         margin: 17vw 0 0 5vw;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         text-align: left;
     }
     .footer__link {
         margin: 5vw 0 0 5vw;
+        font-size: 1.2rem;
         text-align: left;
     }
     .footer__ig, .footer__email {
