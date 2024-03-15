@@ -284,13 +284,12 @@ img {
 .landing__text {
     background-image: url("../img/mobile/p1.png");
     background-repeat: no-repeat;
-    background-position: left 0 top 15vw;
+    background-position: left 0 top 30vw;
     background-size: contain;
     position: relative;
     padding: 0;
     width: 100vw;
-    height: 150vw;
-    writing-mode: vertical-rl
+    height: 200vw;
 }
 .landing__text_en {
     font-size: 1.2rem;
@@ -299,13 +298,6 @@ img {
 .landing__text_tc {
     font-size: 1.6rem;
     letter-spacing: 0.5rem;
-}
-.landing__bag {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 45vw;
 }
 .landing__words {
     background-image: url("../img/mobile/p1_words.png");
@@ -316,8 +308,22 @@ img {
     top: 30vw;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    height: 150vw;
 }
+.landing__bag {
+    background-image: url("../img/mobile/p1_bag.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 30vw;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100vw;
+    height: 200vw;
+    z-index: 3;
+}
+
 /* steps */
 .steps__text {
     width: 100vw;
@@ -499,14 +505,14 @@ img {
 }
 /* past */
 .past__imgtitle {
-    background-image: url("../img/pasttitle.png");
+    background-image: url("../img/mobile/pasttitle.png");
     background-repeat: no-repeat;
     background-position: left 0 top 0;
     background-size: contain;
     position: relative;
     width: 100vw;
-    height: 20vw;
-    margin: 0 0 5vw;
+    height: 50vw;
+    margin: 0 0 15vw;
 }
 .past__text {
     display: flex;
@@ -818,6 +824,11 @@ img {
         background-position: left 0 top 0;
         height: 50vw;
         top: 10vw;
+    }
+    .landing__bag {
+        background-image: url("../img/p1_bag.png");
+        background-position: left 0 top 14vw;
+        height: 80vw;
     }
 
     /* steps */
