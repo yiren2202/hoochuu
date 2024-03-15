@@ -137,7 +137,7 @@ for (var i=0; i<revealElements2.length; i++) { // create a scene for each elemen
             triggerHook: 0.4,
           })
           .setClassToggle(revealElements2[i], "visible") // add class toggle
-          .duration(600)
+          .duration(1200)
           .addTo(SMcontroller);
 }
 
