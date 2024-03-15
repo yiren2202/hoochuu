@@ -61,7 +61,9 @@ let scrollPos__check2 = document.getElementById("reasons__text").offsetTop-400;
 let scrollPos__check3 = document.getElementById("about__text").offsetTop-400;
 let scrollPos__check4 = document.getElementById("past__text").offsetTop-400;
 let scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
+let scrollPos__check6 = document.getElementById("footer").offsetTop-400;
 let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
+let applybuttonHasMoved = false;
 let applybutton = document.getElementById("applybutton");
 
 let sidebar__open = document.getElementById("sidebar__open");
@@ -211,8 +213,23 @@ function doSomething(scrollPos) {
       bagtop = innerH*-0.2;
       bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
     }
+    else if(scrollPos <= scrollPos__check6)
+    {
+      if(applybuttonHasMoved) {
+        applybutton.classList.remove("tocenter");
+        applybutton.classList.add("toleft");
+        applybuttonHasMoved = false;
+      }
+      bagtop = innerH*-0.2;
+      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
+    }
     else
     {
+      if(!applybuttonHasMoved) {
+        applybutton.classList.remove("toleft");
+        applybutton.classList.add("tocenter");
+        applybuttonHasMoved = true;
+      }
       bagtop = innerH*-0.2;
       bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
     }

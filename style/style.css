@@ -46,6 +46,14 @@ img {
     0%{ opacity: 1; }
     100%{ opacity: 0; }
 }
+@keyframes tocenter{
+    0%{ left: 3vw; }
+    100%{ left: 45vw; }
+}
+@keyframes toleft{
+    0%{ left: 45vw; }
+    100%{ left: 3vw; }
+}
 @-moz-keyframes spin {
     0% { -moz-transform: rotate(-10deg); } 
     100% { -moz-transform: rotate(10deg); } 
@@ -107,7 +115,7 @@ img {
 }
 .progressbar__text {
     position: absolute;
-    top: 45%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%);
     color: #fff;
@@ -224,12 +232,25 @@ img {
     position: fixed;
     bottom: 9vw;
     left: 3vw;
+    /* transform: translate(-50%); */
     width: 25vw;
     z-index: 8;
     opacity: 1;
     -webkit-animation:spin 0.5s linear alternate infinite;
     -moz-animation:spin 0.5s linear alternate infinite;
     animation:spin 0.5s linear alternate infinite;
+}
+.applybutton.tocenter {
+    left: 45vw;
+    -webkit-animation:tocenter 0.5s linear normal;
+    -moz-animation:tocenter 0.5s linear normal;
+    animation:tocenter 0.5s linear normal;
+}
+.applybutton.toleft {
+    left: 3vw;
+    -webkit-animation:toleft 0.5s linear normal;
+    -moz-animation:toleft 0.5s linear normal;
+    animation:toleft 0.5s linear normal;
 }
 #lottie1 {
     width: 60vw;
