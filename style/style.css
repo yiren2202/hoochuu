@@ -46,6 +46,12 @@ img {
     0%{ opacity: 1; }
     100%{ opacity: 0; }
 }
+@keyframes fadeshow{
+    0%{ opacity: 0; }
+    10%{ opacity: 1; }
+    90%{ opacity: 1; }
+    100%{ opacity: 0; }
+}
 @keyframes tocenter{
     0%{ left: 3vw; }
     100%{ left: 45vw; }
@@ -115,17 +121,24 @@ img {
 }
 .progressbar__text {
     position: absolute;
-    top: 46%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%);
     color: #fff;
     text-align: center;
     font-size: 1rem;
+    opacity: 0;
+}
+.progressbar__text.fadeshow {
+    opacity: 0;
+    -webkit-animation:fadeshow 2.5s linear normal ;
+    -moz-animation:fadeshow 2.5s linear normal ;
+    animation:fadeshow 2.5s linear normal ;
 }
 /* HTML: <div class="loader"></div> */
 .loader {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%);
     width: 120px;
@@ -713,12 +726,12 @@ img {
         background-size: 40%, contain;
     }
     .progressbar__text {
-        top: 55%;
+        top: 50%;
         font-size: 1.4rem;
     }
     /* HTML: <div class="loader"></div> */
     .loader {
-        top: 75%;
+        top: 60%;
     }
 
     .sidebar__open {

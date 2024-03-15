@@ -1,26 +1,37 @@
 let isloaded = false;
 let progressbar =  document.getElementById("progressbar");
-// let progressbar__lottie = document.getElementById("progressbar__lottie");
-// let progressbar__lottie__path = "../img/lottiefile/plastic_240228_inline_fixed.json"
-// let progressbar__lottie__animation;
-// progressbar__lottie__animation = lottie.loadAnimation({
-//   container: progressbar__lottie, // the dom element that will contain the animation
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   path: progressbar__lottie__path // the path to the animation json
-// });
-// progressbar__lottie__animation.addEventListener('data_ready', () => {
-//   console.log('loading animation data has loaded');
-//   // progressbar__lottie__animation.goToAndStop(228, true);
-//   // progressbar__lottie__animation.playSegments([228,267], true);
-// });
-// progressbar__lottie__animation.addEventListener('loopComplete', () => {
-//   console.log('loading animation complete');
-//   progressbar.classList.add("fadeout");
-//   progressbar__lottie__animation.destroy();
-// });
-progressbar.addEventListener('animationend',function(){
+
+// progressbar__text animation
+let progressbar__texts = document.getElementsByClassName("progressbar__text");
+function progressbarTextAnimation(index) {
+  if(index<progressbar__texts.length-1) {
+    progressbar__texts[index].classList.toggle("fadeshow");
+    progressbar__texts[index+1].classList.toggle("fadeshow");
+  }
+  else {
+    progressbar__texts[index].classList.toggle("fadeshow");
+    progressbar__texts[0].classList.toggle("fadeshow");
+  }
+}
+progressbar__texts[0].addEventListener('animationend',function(e){
+  e.stopPropagation();
+  progressbarTextAnimation(0);
+});
+progressbar__texts[1].addEventListener('animationend',function(e){
+  e.stopPropagation();
+  progressbarTextAnimation(1);
+});
+progressbar__texts[2].addEventListener('animationend',function(e){
+  e.stopPropagation();
+  progressbarTextAnimation(2);
+});
+progressbar__texts[3].addEventListener('animationend',function(e){
+  e.stopPropagation();
+  progressbarTextAnimation(3);
+});
+progressbar__texts[0].classList.add("fadeshow");
+progressbar.addEventListener('animationend',function(e){
+  e.stopPropagation();
   console.log('CSS animation end');
   if(isloaded) progressbar.style.display = "none";
   else isloaded = true;
