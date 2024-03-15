@@ -90,7 +90,7 @@ img {
 .progressbar {
     background: url(../img/loading.png), radial-gradient(circle, rgba(255,104,72,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
-    background-position: 50% 35%;
+    background-position: 50% 30%;
     background-size: 70%, contain;
     position: fixed;
     top: 0;
@@ -121,7 +121,7 @@ img {
 }
 .progressbar__text {
     position: absolute;
-    top: 47%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%);
     color: #fff;
@@ -321,6 +321,7 @@ img {
     background-position: left 0 top 30vw;
     background-size: contain;
     position: relative;
+    margin: 0 0 50vw;
     padding: 0;
     width: 100vw;
     height: 200vw;
@@ -480,7 +481,7 @@ img {
     background-position: left 0 top 0;
     background-size: contain;
     width: 100%;
-    height: 260vw;
+    height: 290vw;
     margin: 40vw 0;
 }
 .reasons__item1 {
@@ -855,6 +856,7 @@ img {
     .landing__text {
         background-image: url("../img/p1.png");
         background-position: left 0 top 14vw;
+        margin: 0;
         height: 80vw;
     }
     .landing__text_en {
