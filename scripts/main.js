@@ -134,10 +134,10 @@ for (var i=0; i<revealElements2.length; i++) { // create a scene for each elemen
   new ScrollMagic.Scene({
             triggerElement: revealElements2triggers[i], // y value has modified, so we use other element as trigger
             offset: 50,												 // start a little later
-            triggerHook: 0.2,
+            triggerHook: 0.4,
           })
           .setClassToggle(revealElements2[i], "visible") // add class toggle
-          .duration(400)
+          .duration(600)
           .addTo(SMcontroller);
 }
 
