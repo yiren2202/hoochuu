@@ -404,6 +404,9 @@ img {
     padding: 5% 0 0 5%;
     font-size: 1.5rem;
 }
+.steps__item.steps__item_right .steps__item_text .font__en{
+    font-weight: 600;
+}
 .digit {
     opacity: 0;
     -webkit-transform: translateX(-40px);
@@ -615,7 +618,7 @@ img {
     overflow: hidden;
 }
 .splide__slide p {
-    margin: 2vw;
+    margin: 5vw;
     font-size: 1rem;
 }
 .splide__slide .splide__slidetitle {
