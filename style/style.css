@@ -498,6 +498,16 @@ img {
     width: 10vw;
 }
 /* past */
+.past__imgtitle {
+    background-image: url("../img/pasttitle.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin: 0 0 5vw;
+}
 .past__text {
     display: flex;
     flex-direction: column;
@@ -793,7 +803,7 @@ img {
     .landing__text {
         background-image: url("../img/p1.png");
         background-position: left 0 top 14vw;
-        height: 70vw;
+        height: 80vw;
     }
     .landing__text_en {
         font-size: 1.2rem;
@@ -939,6 +949,12 @@ img {
         width: 7vw;
     }
     /* past */
+    .past__imgtitle {
+        background-image: url("../img/pasttitle.png");
+        width: 100vw;
+        height: 20vw;
+        margin: 0 0 5vw;
+    }
     .past__text {
         display: flex;
         flex-direction: row;
