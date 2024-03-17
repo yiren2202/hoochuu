@@ -298,7 +298,7 @@ a.nostyle:visited {
     z-index: 10;
     float: right;
     text-align: center;
-    width: 50%;
+    width: 50vw;
     left: 25vw;
     top: 10vw;
     padding: 5vw;
@@ -471,7 +471,7 @@ a.nostyle:visited {
         background-repeat: no-repeat;
     }
     .popup{
-        width: 80%;
+        width: 80vw;
         left: 10vw;
         top: 25vw;
     }
