@@ -162,6 +162,24 @@ function doSomething(scrollPos) {
   let bagtop;
   let bagleft;
   
+  // All Device Scroll
+  if(scrollPos <= scrollPos__check1)
+  {
+    if(lottie1HasShowed) {
+      lottie1.classList.remove("fadein");
+      lottie1.classList.add("fadeout");
+      lottie1HasShowed = false;
+    }
+  }
+  else
+  {
+    if(!lottie1HasShowed) {
+      lottie1.classList.remove("fadeout");
+      lottie1.classList.add("fadein");
+      lottie1HasShowed = true;
+    }
+  }
+
   // Mobile Scroll
   if(innerW < 768) {
     bagtop = innerH*0.25;
@@ -220,23 +238,7 @@ function doSomething(scrollPos) {
       bagtop = innerH*-0.2 + innerH*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
       bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
     }
-    // All Device Scroll
-    if(scrollPos <= scrollPos__check1)
-    {
-      if(lottie1HasShowed) {
-        lottie1.classList.remove("fadein");
-        lottie1.classList.add("fadeout");
-        lottie1HasShowed = false;
-      }
-    }
-    else
-    {
-      if(!lottie1HasShowed) {
-        lottie1.classList.remove("fadeout");
-        lottie1.classList.add("fadein");
-        lottie1HasShowed = true;
-      }
-    }
+    
     if(scrollPos <= scrollPos__applybuttonTrigger)
     {
       if(applybuttonHasMoved) {
