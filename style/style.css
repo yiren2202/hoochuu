@@ -879,6 +879,7 @@ img {
     .landing__words {
         background-image: url("../img/p1_words.png");
         background-position: left 0 top 0;
+        background-size: 100vw;
         height: 50vw;
         top: 10vw;
     }
