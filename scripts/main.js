@@ -161,7 +161,7 @@ function doSomething(scrollPos) {
   // console.log(scrollPos);
   let bagtop;
   let bagleft;
-  
+
   // All Device Scroll
   if(scrollPos <= scrollPos__check1)
   {
@@ -187,19 +187,19 @@ function doSomething(scrollPos) {
 
     if(scrollPos <= scrollPos__check1)
     {
-      bagtop = innerH*0.25 - innerH*0.37*(scrollPos/scrollPos__check1) ;
+      bagtop = innerH*0.25 - innerH*0.43*(scrollPos/scrollPos__check1) ;
     }
     else if(scrollPos<=scrollPos__check2)
     {
-      bagtop = innerH*-0.12;
+      bagtop = innerH*-0.18;
     }
     else if(scrollPos<=scrollPos__check5)
     {
-      bagtop = innerH*-0.12;
+      bagtop = innerH*-0.18;
     }
     else
     {
-      bagtop = innerH*-0.12 + innerH*0.1*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
+      bagtop = innerH*-0.18 + innerH*0.2*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
     }
   }
   // Desktop Scroll
