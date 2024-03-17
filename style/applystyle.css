@@ -254,7 +254,7 @@ a.nostyle:visited {
 
 #other-item {
     display: inline-block; /* 将复选框项设置为行内块元素 */
-    width: 50%; /* 设置宽度为三分之一，并减去间距 */
+    width: 20rem; /* 设置宽度为三分之一，并减去间距 */
     margin-right: 10vw; /* 设置右侧间距 */
     vertical-align: top; /* 使复选框项顶部对齐 */
     border: 1px solid #ccc; /* 添加边框样式 */
