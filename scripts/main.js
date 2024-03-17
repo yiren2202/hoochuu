@@ -185,23 +185,25 @@ function doSomething(scrollPos) {
     bagtop = innerH*0.25;
     bagleft = innerW*0.5;
 
-    if(scrollPos <= scrollPos__check1)
-    {
-      bagtop = innerH*0.25 - innerH*0.43*(scrollPos/scrollPos__check1) ;
-    }
-    else if(scrollPos<=scrollPos__check2)
-    {
-      bagtop = innerH*-0.18;
-    }
-    else if(scrollPos<=scrollPos__check5)
-    {
-      bagtop = innerH*-0.18;
-    }
-    else
-    {
-      bagtop = innerH*-0.18;
-      // bagtop = innerH*-0.18 + innerH*0.2*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
-    }
+    // if(scrollPos <= scrollPos__check1)
+    // {
+    //   bagtop = innerH*-0.18;
+    //   // bagtop = innerH*0.25 - innerH*0.43*(scrollPos/scrollPos__check1);
+    // }
+    // else if(scrollPos<=scrollPos__check2)
+    // {
+    //   bagtop = innerH*-0.18;
+    // }
+    // else if(scrollPos<=scrollPos__check5)
+    // {
+    //   bagtop = innerH*-0.18;
+    // }
+    // else
+    // {
+    //   bagtop = innerH*-0.18;
+    //   // bagtop = innerH*-0.18 + innerH*0.2*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
+    // }
+    bagtop = innerH*-0.18;
   }
   // Desktop Scroll
   else if(innerW >= 768) {
