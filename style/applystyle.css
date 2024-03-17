@@ -439,7 +439,7 @@ a.nostyle:visited {
         vertical-align: top; /* 使复选框项顶部对齐 */
         border: 1px solid #ccc; /* 添加边框样式 */
         border-radius: 20px; /* 添加圆角 */
-        padding: 5px 0.5rem; /* 添加内边距 */
+        padding: 5px 0; /* 添加内边距 */
         font-weight: normal;
         background-color: white;
     }
