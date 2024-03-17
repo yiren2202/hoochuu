@@ -100,6 +100,14 @@ function preload_image(im_url) {
 window.addEventListener("resize", function() {
   innerW = window.innerWidth;
   innerH = window.innerHeight;
+  scrollPos__check1 = document.getElementById("steps__text").offsetTop-400;
+  scrollPos__check2 = document.getElementById("reasons__text").offsetTop-400;
+  scrollPos__check3 = document.getElementById("about__text").offsetTop-400;
+  scrollPos__check4 = document.getElementById("past__text").offsetTop-400;
+  scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
+  scrollPos__check6 = document.getElementById("footer").offsetTop-400;
+  scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
+  scrollPos__applybuttonTrigger = scrollPos__bottom-200;
   doSomething(lastKnownScrollPosition);
 });
 lottie1.addEventListener("click", function() {
@@ -154,26 +162,17 @@ function doSomething(scrollPos) {
   let bagtop;
   let bagleft;
   
+  // Mobile Scroll
   if(innerW < 768) {
     bagtop = innerH*0.25;
     bagleft = innerW*0.5;
 
     if(scrollPos <= scrollPos__check1)
     {
-      if(lottie1HasShowed) {
-        lottie1.classList.remove("fadein");
-        lottie1.classList.add("fadeout");
-        lottie1HasShowed = false;
-      }
       bagtop = innerH*0.25 - innerH*0.37*(scrollPos/scrollPos__check1) ;
     }
     else if(scrollPos<=scrollPos__check2)
     {
-      if(!lottie1HasShowed) {
-        lottie1.classList.remove("fadeout");
-        lottie1.classList.add("fadein");
-        lottie1HasShowed = true;
-      }
       bagtop = innerH*-0.12;
     }
     else if(scrollPos<=scrollPos__check5)
@@ -185,27 +184,18 @@ function doSomething(scrollPos) {
       bagtop = innerH*-0.12 + innerH*0.1*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
     }
   }
+  // Desktop Scroll
   else if(innerW >= 768) {
     bagtop = innerH*-0.15;
     bagleft = innerW*0.5;
 
     if(scrollPos <= scrollPos__check1)
     {
-      if(lottie1HasShowed) {
-        lottie1.classList.remove("fadein");
-        lottie1.classList.add("fadeout");
-        lottie1HasShowed = false;
-      }
       bagtop = innerH*-0.15;
       bagleft = innerW*0.5 + innerW*0.4*(scrollPos/scrollPos__check1);
     }
     else if(scrollPos <= scrollPos__check2)
     {
-      if(!lottie1HasShowed) {
-        lottie1.classList.remove("fadeout");
-        lottie1.classList.add("fadein");
-        lottie1HasShowed = true;
-      }
       bagtop = innerH*-0.15 - innerH*0.05*((scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1)) ;
       bagleft = innerW*0.9 - innerW*0.4*( (scrollPos-scrollPos__check1)/(scrollPos__check2-scrollPos__check1) );
       // console.log(bagleft);
@@ -223,21 +213,30 @@ function doSomething(scrollPos) {
     else if(scrollPos <= scrollPos__check5)
     {
       bagtop = innerH*-0.2;
-      bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
-    }
-    else if(scrollPos <= scrollPos__check6)
-    {
-      
-      bagtop = innerH*-0.2;
-      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
+      bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) );
     }
     else
     {
-      
-      bagtop = innerH*-0.2;
-      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
+      bagtop = innerH*-0.2 + innerH*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
+      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
     }
-
+    // All Device Scroll
+    if(scrollPos <= scrollPos__check1)
+    {
+      if(lottie1HasShowed) {
+        lottie1.classList.remove("fadein");
+        lottie1.classList.add("fadeout");
+        lottie1HasShowed = false;
+      }
+    }
+    else
+    {
+      if(!lottie1HasShowed) {
+        lottie1.classList.remove("fadeout");
+        lottie1.classList.add("fadein");
+        lottie1HasShowed = true;
+      }
+    }
     if(scrollPos <= scrollPos__applybuttonTrigger)
     {
       if(applybuttonHasMoved) {
