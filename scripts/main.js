@@ -32,9 +32,9 @@ progressbar__texts[3].addEventListener('animationend',function(e){
 progressbar__texts[0].classList.add("fadeshow");
 progressbar.addEventListener('animationend',function(e){
   e.stopPropagation();
-  // console.log('CSS animation end');
-  // if(isloaded) progressbar.style.display = "none";
-  // else isloaded = true;
+  console.log('CSS animation end');
+  if(isloaded) progressbar.style.display = "none";
+  else isloaded = true;
 });
 
 
