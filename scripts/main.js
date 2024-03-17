@@ -74,6 +74,7 @@ let scrollPos__check4 = document.getElementById("past__text").offsetTop-400;
 let scrollPos__check5 = document.getElementById("share__text").offsetTop-400;
 let scrollPos__check6 = document.getElementById("footer").offsetTop-400;
 let scrollPos__bottom = document.body.scrollHeight-window.innerHeight;
+let scrollPos__applybuttonTrigger = scrollPos__bottom-200;
 let applybuttonHasMoved = false;
 let applybutton = document.getElementById("applybutton");
 
@@ -190,12 +191,6 @@ function doSomething(scrollPos) {
 
     if(scrollPos <= scrollPos__check1)
     {
-      if(applybuttonHasMoved) {
-        lottie1.classList.remove("clickme");
-        // applybutton.classList.remove("tocenter");
-        // applybutton.classList.add("toleft");
-        applybuttonHasMoved = false;
-      }
       if(lottie1HasShowed) {
         lottie1.classList.remove("fadein");
         lottie1.classList.add("fadeout");
@@ -206,12 +201,6 @@ function doSomething(scrollPos) {
     }
     else if(scrollPos <= scrollPos__check2)
     {
-      if(applybuttonHasMoved) {
-        lottie1.classList.remove("clickme");
-        // applybutton.classList.remove("tocenter");
-        // applybutton.classList.add("toleft");
-        applybuttonHasMoved = false;
-      }
       if(!lottie1HasShowed) {
         lottie1.classList.remove("fadeout");
         lottie1.classList.add("fadein");
@@ -223,38 +212,33 @@ function doSomething(scrollPos) {
     }
     else if(scrollPos <= scrollPos__check3)
     {
-      if(applybuttonHasMoved) {
-        lottie1.classList.remove("clickme");
-        // applybutton.classList.remove("tocenter");
-        // applybutton.classList.add("toleft");
-        applybuttonHasMoved = false;
-      }
       bagtop = innerH*-0.2;
       bagleft = innerW*0.5;
     }
     else if(scrollPos <= scrollPos__check4)
     {
-      if(applybuttonHasMoved) {
-        lottie1.classList.remove("clickme");
-        // applybutton.classList.remove("tocenter");
-        // applybutton.classList.add("toleft");
-        applybuttonHasMoved = false;
-      }
       bagtop = innerH*-0.2;
       bagleft = innerW*0.5 - innerW*0.4*( (scrollPos-scrollPos__check3)/(scrollPos__check4-scrollPos__check3) ) ;
     }
     else if(scrollPos <= scrollPos__check5)
     {
-      if(applybuttonHasMoved) {
-        lottie1.classList.remove("clickme");
-        // applybutton.classList.remove("tocenter");
-        // applybutton.classList.add("toleft");
-        applybuttonHasMoved = false;
-      }
       bagtop = innerH*-0.2;
       bagleft = innerW*0.1 + innerW*0.4*( (scrollPos-scrollPos__check4)/(scrollPos__check5-scrollPos__check4) ) ;
     }
     else if(scrollPos <= scrollPos__check6)
+    {
+      
+      bagtop = innerH*-0.2;
+      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
+    }
+    else
+    {
+      
+      bagtop = innerH*-0.2;
+      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
+    }
+
+    if(scrollPos <= scrollPos__applybuttonTrigger)
     {
       if(applybuttonHasMoved) {
         lottie1.classList.remove("clickme");
@@ -262,8 +246,6 @@ function doSomething(scrollPos) {
         // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
-      bagtop = innerH*-0.2;
-      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
     }
     else
     {
@@ -273,8 +255,6 @@ function doSomething(scrollPos) {
         // applybutton.classList.add("tocenter");
         applybuttonHasMoved = true;
       }
-      bagtop = innerH*-0.2;
-      bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) ) ;
     }
   }
 
