@@ -276,6 +276,13 @@ img {
     z-index: 6;
     opacity: 0;
 }
+#lottie1.clickme {
+    background: url(../img/lottieclick.png);
+    background-repeat: no-repeat;
+    /* background-position: 0; */
+    background-size: contain;
+    
+}
 #lottie1.fadein {
     opacity: 1;
     -webkit-animation:fadein 1s linear normal ;

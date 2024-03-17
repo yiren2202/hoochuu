@@ -191,8 +191,9 @@ function doSomething(scrollPos) {
     if(scrollPos <= scrollPos__check1)
     {
       if(applybuttonHasMoved) {
-        applybutton.classList.remove("tocenter");
-        applybutton.classList.add("toleft");
+        lottie1.classList.remove("clickme");
+        // applybutton.classList.remove("tocenter");
+        // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
       if(lottie1HasShowed) {
@@ -206,8 +207,9 @@ function doSomething(scrollPos) {
     else if(scrollPos <= scrollPos__check2)
     {
       if(applybuttonHasMoved) {
-        applybutton.classList.remove("tocenter");
-        applybutton.classList.add("toleft");
+        lottie1.classList.remove("clickme");
+        // applybutton.classList.remove("tocenter");
+        // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
       if(!lottie1HasShowed) {
@@ -222,8 +224,9 @@ function doSomething(scrollPos) {
     else if(scrollPos <= scrollPos__check3)
     {
       if(applybuttonHasMoved) {
-        applybutton.classList.remove("tocenter");
-        applybutton.classList.add("toleft");
+        lottie1.classList.remove("clickme");
+        // applybutton.classList.remove("tocenter");
+        // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
       bagtop = innerH*-0.2;
@@ -232,8 +235,9 @@ function doSomething(scrollPos) {
     else if(scrollPos <= scrollPos__check4)
     {
       if(applybuttonHasMoved) {
-        applybutton.classList.remove("tocenter");
-        applybutton.classList.add("toleft");
+        lottie1.classList.remove("clickme");
+        // applybutton.classList.remove("tocenter");
+        // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
       bagtop = innerH*-0.2;
@@ -242,8 +246,9 @@ function doSomething(scrollPos) {
     else if(scrollPos <= scrollPos__check5)
     {
       if(applybuttonHasMoved) {
-        applybutton.classList.remove("tocenter");
-        applybutton.classList.add("toleft");
+        lottie1.classList.remove("clickme");
+        // applybutton.classList.remove("tocenter");
+        // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
       bagtop = innerH*-0.2;
@@ -252,8 +257,9 @@ function doSomething(scrollPos) {
     else if(scrollPos <= scrollPos__check6)
     {
       if(applybuttonHasMoved) {
-        applybutton.classList.remove("tocenter");
-        applybutton.classList.add("toleft");
+        lottie1.classList.remove("clickme");
+        // applybutton.classList.remove("tocenter");
+        // applybutton.classList.add("toleft");
         applybuttonHasMoved = false;
       }
       bagtop = innerH*-0.2;
@@ -262,8 +268,9 @@ function doSomething(scrollPos) {
     else
     {
       if(!applybuttonHasMoved) {
-        applybutton.classList.remove("toleft");
-        applybutton.classList.add("tocenter");
+        lottie1.classList.add("clickme");
+        // applybutton.classList.remove("toleft");
+        // applybutton.classList.add("tocenter");
         applybuttonHasMoved = true;
       }
       bagtop = innerH*-0.2;
