@@ -121,9 +121,10 @@ img {
 }
 .progressbar__text {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%);
+    width: 100vw;
     color: #fff;
     text-align: center;
     font-size: 1rem;
@@ -337,8 +338,8 @@ img {
 .landing__words {
     background-image: url("../img/mobile/p1_words.png");
     background-repeat: no-repeat;
-    background-position: left 0 top 0;
-    background-size: contain;
+    background-position: left 5vw top 0;
+    background-size: 90vw;
     position: sticky;
     top: 40vw;
     left: 0;
@@ -549,7 +550,7 @@ img {
     background-size: contain;
     position: relative;
     width: 100vw;
-    height: 50vw;
+    height: 60vw;
     margin: 0 0 15vw;
 }
 .past__text {
@@ -686,7 +687,7 @@ img {
     position: relative;
     padding: 90vw 5vw 10vw 5vw;
     width: 100vw;
-    height: 185vw;
+    height: 195vw;
     z-index: 4;
 }
 .footer__left {
