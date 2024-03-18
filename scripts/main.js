@@ -194,16 +194,15 @@ function doSomething(scrollPos) {
     // {
     //   bagtop = innerH*-0.18;
     // }
-    // else if(scrollPos<=scrollPos__check5)
-    // {
-    //   bagtop = innerH*-0.18;
-    // }
-    // else
-    // {
-    //   bagtop = innerH*-0.18;
-    //   // bagtop = innerH*-0.18 + innerH*0.2*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
-    // }
-    bagtop = innerH*-0.18;
+    // else 
+    if(scrollPos<=scrollPos__check5)
+    {
+      bagtop = innerH*-0.18;
+    }
+    else
+    {
+      bagtop = innerH*-0.18 + innerH*0.15*((scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5)) ;
+    }
   }
   // Desktop Scroll
   else if(innerW >= 768) {
