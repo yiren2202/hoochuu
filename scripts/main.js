@@ -51,6 +51,13 @@ function showMain() {
   applysection.style.display = "none";
   mainpage.style.display = "block";
   window.scrollTo(0, 0);
+  // hot fix lottie bag fadein
+  if(lottie1HasShowed) {
+    lottie1.classList.remove("fadein");
+    lottie1.classList.add("fadeout");
+    lottie1HasShowed = false;
+  }
+  // hot fix
 }
 window.onload = () => {
   //do work
