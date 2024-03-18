@@ -98,6 +98,7 @@ a.nostyle:visited {
 
 .apply {
     position: relative;
+    z-index: 20;
 }
 .bg{
     display: block;
