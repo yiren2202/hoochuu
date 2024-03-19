@@ -144,7 +144,7 @@ a.nostyle:visited {
     width: 100%;
     height: 20%;
     left: 0%;
-    margin-top: 15vw;
+    margin-top: 5vw;
     z-index: 7;
 }
 
@@ -401,12 +401,13 @@ a.nostyle:visited {
         max-width: 25vw;
         min-width: 25vw;
     }
-    #last{
+    .last{
         display: block;
         position: relative;
         width: 100%;
         left: 0%;
         top: 0vh;
+        margin-top: 15vw;
     }
     .back{
         top: 45px;
@@ -523,7 +524,7 @@ a.nostyle:visited {
         font-size:  30px;
         line-height: 2.2;
     }
-    #last{
+    .last{
         top: 0vh;
     }
     #bags {
