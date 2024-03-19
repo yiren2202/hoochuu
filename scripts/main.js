@@ -179,6 +179,20 @@ function doSomething(scrollPos) {
       lottie1HasShowed = true;
     }
   }
+  if(scrollPos <= scrollPos__applybuttonTrigger)
+    {
+      if(applybuttonHasMoved) {
+        lottie1.classList.remove("clickme");
+        applybuttonHasMoved = false;
+      }
+    }
+    else
+    {
+      if(!applybuttonHasMoved) {
+        lottie1.classList.add("clickme");
+        applybuttonHasMoved = true;
+      }
+    }
 
   // Mobile Scroll
   if(innerW < 768) {
@@ -239,25 +253,6 @@ function doSomething(scrollPos) {
     {
       bagtop = innerH*-0.2 + innerH*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
       bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
-    }
-    
-    if(scrollPos <= scrollPos__applybuttonTrigger)
-    {
-      if(applybuttonHasMoved) {
-        lottie1.classList.remove("clickme");
-        // applybutton.classList.remove("tocenter");
-        // applybutton.classList.add("toleft");
-        applybuttonHasMoved = false;
-      }
-    }
-    else
-    {
-      if(!applybuttonHasMoved) {
-        lottie1.classList.add("clickme");
-        // applybutton.classList.remove("toleft");
-        // applybutton.classList.add("tocenter");
-        applybuttonHasMoved = true;
-      }
     }
   }
 
