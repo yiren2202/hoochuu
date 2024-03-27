@@ -150,7 +150,7 @@ for (var i=0; i<revealElements2.length; i++) { // create a scene for each elemen
           .addTo(SMcontroller);
 }
 
-let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 300})
+let scene__share = new ScrollMagic.Scene({triggerElement: "#trigger__share", duration: 100})
   .triggerHook(0)
   .setPin("#share__text", {pushFollowers: false})
   .addTo(SMcontroller);

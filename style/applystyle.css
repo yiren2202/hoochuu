@@ -186,6 +186,18 @@ a.nostyle:visited {
     margin-right: 10px !important;
     font-size: 1.1rem;
 }
+.product__checkbox:checked:before {
+    content: ""; /*產生一個空的元素*/
+	position: absolute; /*利用absolute定位*/
+	top: .5rem;
+    left: 0;  /*調整位置*/
+    width: 1.5rem;
+    height: 1.5rem;
+	background-image: url(../img/tick.png); /*插入圖片*/
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+}
 .checkboxdisplay{
     appearance: none;
     border: none !important;
@@ -212,7 +224,7 @@ a.nostyle:visited {
     max-width: 15vw;
     min-width: 15vw;
 }
-#bags {
+.bags {
     /*-webkit-appearance: none;*/
     flex: 1 !important; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
     border-radius: 20px !important;
@@ -220,26 +232,41 @@ a.nostyle:visited {
     padding: 8px !important; /* 设置内边距 */
     margin-right: 0px !important;
 }
-#agree_flag{
+.agree_flag{
     /*-webkit-appearance: none;*/
     flex: 1 !important; /* 设置 input 元素的 flex 属性为 1，使其填充剩余空间 */
     border-radius: 20px !important;
     border: 1px solid #ccc !important; /* 设置边框样式 */
     padding: 8px !important; /* 设置内边距 */
     margin-right: 0px !important;
+}
+.bags, .agree_flag {
+    /* content: ""; 
+    display: inline-block;
+	position: absolute; 
+	top: 1rem;
+    left: 1rem;  
+    width: 1.5rem;
+    height: 1.5rem; */
+    background-color: #ff6748;
+	background-image: url(../img/arrowdown.png); /*插入圖片*/
+    background-repeat: no-repeat;
+    background-position: right 10px top 10px;
+    background-size: 14px;
 }
 #colortitle {
     display: flex;
     align-items: stretch; /* 垂直居中对齐 */
 }
 .checkbox-item {
+    position: relative;
     display: inline-block; /* 将复选框项设置为行内块元素 */
     /* width: calc(28%); 设置宽度为三分之一，并减去间距 */
     margin-right: 2vw; /* 设置右侧间距 */
     vertical-align: top; /* 使复选框项顶部对齐 */
     border: 1px solid #ccc; /* 添加边框样式 */
     border-radius: 20px; /* 添加圆角 */
-    padding: 5px 1.5rem; /* 添加内边距 */
+    padding: 5px 2rem; /* 添加内边距 */
     font-weight: normal;
     background-color: white;
     /* flex: 1; */
@@ -441,9 +468,13 @@ a.nostyle:visited {
         vertical-align: top; /* 使复选框项顶部对齐 */
         border: 1px solid #ccc; /* 添加边框样式 */
         border-radius: 20px; /* 添加圆角 */
-        padding: 5px 0; /* 添加内边距 */
+        padding: 5px 1rem; /* 添加内边距 */
         font-weight: normal;
         background-color: white;
+    }
+    .product__checkbox:checked:before {
+        width: 1rem;
+        height: 1rem;
     }
     .submit{
         display: block;
@@ -527,11 +558,11 @@ a.nostyle:visited {
     .last{
         top: 0vh;
     }
-    #bags {
+    .bags {
         border-radius: 50px !important;
         margin-right: 0px !important;
     }
-    #agree_flag{
+    .agree_flag{
         border-radius: 50px !important;
     }
     .checkbox-item {
