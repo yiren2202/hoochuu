@@ -749,7 +749,7 @@ img {
 
     .sidebar__open {
         position: fixed;
-        top: 7vw;
+        top: 5vw;
         right: 4vw;
         width: 4vw;
         cursor: pointer;
