@@ -376,7 +376,7 @@ a.nostyle:visited {
 #lottieA {
     width: 20vw;
     position: absolute;
-    bottom: -90vw;
+    bottom: -100vw;
     left: 70vw;
     transform: translate(-50%);
     z-index: 6;
