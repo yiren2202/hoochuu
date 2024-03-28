@@ -99,6 +99,9 @@ a.nostyle:visited {
 .apply {
     position: relative;
     z-index: 20;
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
 }
 .bg{
     display: block;
@@ -374,7 +377,7 @@ a.nostyle:visited {
 #lottieA {
     width: 20vw;
     position: absolute;
-    bottom: 0;
+    bottom: -90vw;
     left: 70vw;
     transform: translate(-50%);
     z-index: 6;
@@ -518,7 +521,7 @@ a.nostyle:visited {
     #lottieA {
         width: 40vw;
         position: absolute;
-        bottom: 20vw;
+        bottom: -150vw;
         left: 50vw;
         transform: translate(-50%);
         z-index: 6;
