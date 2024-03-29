@@ -40,6 +40,7 @@ progressbar.addEventListener('animationend',function(e){
 
 let mainpage = document.getElementById("mainpage");
 let applysection = document.getElementById("apply");
+let formElement = document.getElementById('data');
 applysection.style.display = "none";
 
 function showApply() {
@@ -50,6 +51,7 @@ function showApply() {
 function showMain() {
   applysection.style.display = "none";
   mainpage.style.display = "block";
+  formElement.reset();
   window.scrollTo(0, 0);
 }
 window.onload = () => {
