@@ -118,7 +118,6 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 
-window.scrollTo(0, 0);
 window.addEventListener("resize", function() {
   innerW = window.innerWidth;
   innerH = window.innerHeight;
@@ -450,4 +449,8 @@ splide.on( 'active', function (e) {
 } );
 splide.mount();
 
+setTimeout(() => {
+  window.scrollTo(0, 0);
+  console.log("to top");
+}, "1000");
 }
