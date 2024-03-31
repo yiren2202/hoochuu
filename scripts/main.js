@@ -359,7 +359,7 @@ function doSomething(scrollPos) {
     }
     else
     {
-      bagtop = innerH*-0.2 + innerH*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
+      bagtop = innerH*-0.2 + innerH*0.12*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
       bagleft = innerW*0.5 - innerW*0.1*( (scrollPos-scrollPos__check5)/(scrollPos__bottom-scrollPos__check5) );
     }
   }
