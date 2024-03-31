@@ -1,5 +1,6 @@
 let isloaded = false;
 let progressbar =  document.getElementById("progressbar");
+try{tracker.trackPageview('loading');}catch{}
 
 // progressbar__text animation
 let progressbar__texts = document.getElementsByClassName("progressbar__text");
@@ -33,7 +34,10 @@ progressbar__texts[0].classList.add("fadeshow");
 progressbar.addEventListener('animationend',function(e){
   e.stopPropagation();
   console.log('CSS animation end');
-  if(isloaded) progressbar.style.display = "none";
+  if(isloaded){
+    progressbar.style.display = "none";
+    try{tracker.trackPageview('/home');}catch{}
+  }
   else isloaded = true;
 });
 
@@ -47,6 +51,7 @@ function showApply() {
   mainpage.style.display = "none";
   applysection.style.display = "block";
   window.scrollTo(0, 0);
+  try{tracker.trackPageview('/form');}catch{}
 }
 function showMain() {
   applysection.style.display = "none";
@@ -83,6 +88,20 @@ let applybutton = document.getElementById("applybutton");
 let sidebar__open = document.getElementById("sidebar__open");
 let sidebar__close = document.getElementById("sidebar__close");
 let sidebar = document.getElementById("sidebar");
+let sidebar__reasons = document.getElementById("sidebar__reasons");
+let sidebar__about = document.getElementById("sidebar__about");
+let sidebar__past = document.getElementById("sidebar__past");
+let sidebar__share = document.getElementById("sidebar__share");
+let sidebar__footer = document.getElementById("sidebar__footer");
+let sidebar__ig1 = document.getElementById("sidebar__ig1");
+let sidebar__ig2 = document.getElementById("sidebar__ig2");
+let sidebar__email1 = document.getElementById("sidebar__email1");
+let sidebar__email2 = document.getElementById("sidebar__email2");
+
+let footer__ig1 = document.getElementById("footer__ig1");
+let footer__ig2 = document.getElementById("footer__ig2");
+let footer__email1 = document.getElementById("footer__email1");
+let footer__email2 = document.getElementById("footer__email2");
 
 // init controller
 let SMcontroller = new ScrollMagic.Controller();
@@ -117,9 +136,49 @@ lottie1.addEventListener("click", function() {
 });
 sidebar__open.addEventListener("click", function() {
   sidebar.style.right = 0;
+  try{tracker.trackPageview('/menu');}catch{}
 });
 sidebar__close.addEventListener("click", function() {
   sidebar.style.right = "-480px";
+});
+sidebar__reasons.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/reasons');}catch{}
+});
+sidebar__about.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/about');}catch{}
+});
+sidebar__past.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/past-issues');}catch{}
+});
+sidebar__share.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/together');}catch{}
+});
+sidebar__footer.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/contact');}catch{}
+});
+sidebar__ig1.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/ig');}catch{}
+});
+sidebar__ig2.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/ig');}catch{}
+});
+sidebar__email1.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/email');}catch{}
+});
+sidebar__email2.addEventListener("click", function() {
+  try{tracker.trackEvent('/menu/email');}catch{}
+});
+footer__ig1.addEventListener("click", function() {
+  try{tracker.trackEvent('/contact/ig');}catch{}
+});
+footer__ig2.addEventListener("click", function() {
+  try{tracker.trackEvent('/contact/ig');}catch{}
+});
+footer__email1.addEventListener("click", function() {
+  try{tracker.trackEvent('/contact/email');}catch{}
+});
+footer__email2.addEventListener("click", function() {
+  try{tracker.trackEvent('/contact/email');}catch{}
 });
 let siderbarLinks = document.getElementsByClassName("sidebar-anchor");
 for (var i=0; i<siderbarLinks.length; i++) { // create a scene for each element
@@ -149,6 +208,32 @@ for (var i=0; i<revealElements2.length; i++) { // create a scene for each elemen
           })
           .setClassToggle(revealElements2[i], "visible") // add class toggle
           .duration(1200)
+          .on("enter", function (e) {
+              // console.log(e.target.triggerElement().getAttribute("id"));              
+              switch(e.target.triggerElement().getAttribute("id"))
+              {
+                case "trigger__reasons__digit1":
+                  try{tracker.trackPageview('/reasons/01');}catch{}
+                  console.log("reason1 entered.");
+                  break;
+                case "trigger__reasons__digit2":
+                  try{tracker.trackPageview('/reasons/02');}catch{}
+                  console.log("reason2 entered.");
+                  break;
+                case "trigger__reasons__digit3":
+                  try{tracker.trackPageview('/reasons/03');}catch{}
+                  console.log("reason3 entered.");
+                  break;
+                case "trigger__reasons__digit4":
+                  try{tracker.trackPageview('/reasons/04');}catch{}
+                  console.log("reason4 entered.");
+                  break;
+                case "trigger__reasons__digit5":
+                  try{tracker.trackPageview('/reasons/05');}catch{}
+                  console.log("reason5 entered.");
+                  break;
+              }
+          })
           .addTo(SMcontroller);
 }
 
@@ -173,13 +258,34 @@ function doSomething(scrollPos) {
       lottie1HasShowed = false;
     }
   }
-  else
+  else if(scrollPos <= scrollPos__check2)
   {
+    try{tracker.trackPageview('/steps');}catch{}
     if(!lottie1HasShowed) {
       lottie1.classList.remove("fadeout");
       lottie1.classList.add("fadein");
       lottie1HasShowed = true;
     }
+  }
+  else if(scrollPos <= scrollPos__check3)
+  {
+
+  }
+  else if(scrollPos <= scrollPos__check4)
+  {
+    try{tracker.trackPageview('/about');}catch{}
+  }
+  else if(scrollPos <= scrollPos__check5)
+  {
+
+  }
+  else if(scrollPos <= scrollPos__check6)
+  {
+    try{tracker.trackPageview('/together');}catch{}
+  }
+  else
+  {
+    try{tracker.trackPageview('/contact');}catch{}
   }
   if(scrollPos <= scrollPos__applybuttonTrigger)
     {
@@ -292,7 +398,10 @@ animation1 = lottie.loadAnimation({
 });
 animation1.addEventListener('data_ready', () => {
   console.log('main animation data has loaded');
-  if(isloaded) progressbar.style.display = "none";
+  if(isloaded){
+    progressbar.style.display = "none";
+    try{tracker.trackPageview('/home');}catch{}
+  }
   else isloaded = true;
 });
 
@@ -314,6 +423,30 @@ let splide = new Splide( '.splide', {
     },
   },
 });
+splide.on( 'active', function (e) {
+  // console.log(e.index);
+  switch(e.index)
+  {
+    case 0:
+      try{tracker.trackPageview('/past-issues/01');}catch{}
+      break;
+    case 1:
+      try{tracker.trackPageview('/past-issues/02');}catch{}
+      break;
+    case 2:
+      try{tracker.trackPageview('/past-issues/03');}catch{}
+      break;
+    case 3:
+      try{tracker.trackPageview('/past-issues/04');}catch{}
+      break;
+    case 4:
+      try{tracker.trackPageview('/past-issues/05');}catch{}
+      break;
+    case 5:
+      try{tracker.trackPageview('/past-issues/06');}catch{}
+      break;
+  }
+} );
 splide.mount();
 
 }

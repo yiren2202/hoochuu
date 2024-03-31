@@ -505,6 +505,7 @@ document.getElementById('data').addEventListener('submit', function(event) {
     .then(function (response) {
         console.log(response);
         popup1.style.display = 'block';
+        try{tracker.trackPageview('/form/thanks');}catch{}
     })
     .catch(function (error) {
         console.log(error);
