@@ -379,7 +379,7 @@ input[type="checkbox"]:checked + label {
 #lottieA {
     width: 20vw;
     position: absolute;
-    bottom: -100vw;
+    bottom: -70vw;
     left: 70vw;
     transform: translate(-50%);
     z-index: 6;
