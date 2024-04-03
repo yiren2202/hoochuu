@@ -210,7 +210,7 @@ a.nostyle:visited {
     padding: 0px !important;
 }
 
-.storenameinput{
+/* .storenameinput{
     max-width: 30vw;
 }
 .nameinput{
@@ -221,7 +221,7 @@ a.nostyle:visited {
 }
 .emailinput{
     max-width: 30vw;
-}
+} */
 .cityinput{
     max-width: 15vw;
     min-width: 15vw;
@@ -413,7 +413,7 @@ input[type="checkbox"]:checked + label {
         left: 5vw;
         margin-top: 20vh;
     }
-    .storenameinput{
+    /* .storenameinput{
         max-width: 50vw;
     }
     .nameinput{
@@ -424,7 +424,7 @@ input[type="checkbox"]:checked + label {
     }
     .emailinput{
         max-width: 80vw;
-    }
+    } */
     .cityinput{
         max-width: 25vw;
         min-width: 25vw;
